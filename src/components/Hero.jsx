@@ -8,7 +8,7 @@ const Hero = () => {
           <span className='text-white font-[robotomono] uppercase'>
             unleash your talent,
           </span>
-          Build the future.
+          <br /> Build the future.
         </p>
         <p className='text-white/70 text-md font-semibold text-center mt-7'>
           Innovators and problem-solvers,unite! This hackathon <br />
