@@ -1,13 +1,14 @@
-import './App.css'
-import Faq from './components/Faq'
+import "./App.css";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
-      <h1 className='text-color-1'>App</h1>
-      <Faq />
+      <Header />
+      <Hero />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
