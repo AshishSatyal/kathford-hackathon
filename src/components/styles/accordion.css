@@ -1,0 +1,24 @@
+.accordion {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    @apply text-white;
+}
+
+.accordion > * {
+    @apply py-4;
+}
+
+.accordion-header {
+    @apply text-xl sm:text-2xl md:text-3xl w-full flex items-center justify-between hover:text-white/60;
+}
+
+.accordion-header.active {
+    @apply text-color-1;
+}
+
+.accordion-body {
+    @apply text-[14px] sm:text-[16px] md:text-[20px];
+}
+
+.accordion-close {
+    transform: rotate(45deg);
+}
