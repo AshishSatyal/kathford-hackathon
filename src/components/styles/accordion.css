@@ -1,6 +1,21 @@
 .accordion {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    @apply text-white;
+    @apply relative text-white;
+}
+
+.accordion::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    opacity: 0;
+
+    animation: animateBorder 0.3s ease 1s forwards;
+
+    @apply absolute bg-white/40 rounded-full;
+}
+
+@keyframes animateBorder {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .accordion > * {
