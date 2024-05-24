@@ -1,0 +1,39 @@
+.accordion {
+    @apply relative text-white;
+}
+
+.accordion::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    opacity: 0;
+
+    animation: animateBorder 0.3s ease 1s forwards;
+
+    @apply absolute bg-white/40 rounded-full;
+}
+
+@keyframes animateBorder {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.accordion > * {
+    @apply py-4;
+}
+
+.accordion-header {
+    @apply text-xl sm:text-2xl md:text-3xl w-full flex items-center justify-between hover:text-white/60;
+}
+
+.accordion-header.active {
+    @apply text-color-1;
+}
+
+.accordion-body {
+    @apply text-[14px] sm:text-[16px] md:text-[20px];
+}
+
+.accordion-close {
+    transform: rotate(45deg);
+}
