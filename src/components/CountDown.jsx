@@ -23,12 +23,12 @@ const CountDown = () => {
   return (
     <div className='flex text-center items-center max-h-40'>
       <div>
-        <p className='text-md text-slate-400 font-mono font-semibold'>
+        <p className='text-md text-slate-400 font-mono font-semibold capitalize'>
           Event starts in:
         </p>
       </div>
       <div className='ml-5'>
-        <p className='text-2xl font-bold text-white font-mono pb-1'>{`${timerDays}:${timerHours}:${timerMinutes}:${timerSecods}`}</p>
+        <p className='text-3xl font-bold text-white font-mono pb-1'>{`${timerDays}:${timerHours}:${timerMinutes}:${timerSecods}`}</p>
       </div>
     </div>
   );

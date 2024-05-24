@@ -5,7 +5,7 @@ import hamBurger from "/src/assets/hamBurger.svg";
 const Header = () => {
   return (
     // --Header-container--
-    <div className='sticky top-0 px-[2.5rem] py-7 bg-color-4 min-w-full text-white shadow-lg shadow-color-3/20'>
+    <div className='sticky top-0 px-[2.5rem] py-4 bg-color-3/90 min-w-full text-white shadow-lg shadow-color-3/20'>
       <div className='flex items-center xl:px-10'>
         <div>
           <a href='#hero' className='block w-[12rem] xl:mr-8 '>
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </nav>
         <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex'>
-          <button className='m-2 p-4 rounded-lg bg-color-3 border border-color-1 capitalize hover:bg-color-2 font-mono text-lg font-bold'>
+          <button className='m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-  border  capitalize hover:bg-color-2 font-mono text-lg font-bold'>
             register now
           </button>
         </div>
