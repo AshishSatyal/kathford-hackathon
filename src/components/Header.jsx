@@ -26,7 +26,7 @@ const Header = () => {
               <li>
                 <a
                   className='font-mono font-semibold leading-normal text-lg text-white '
-                  href='#prizes'
+                  href='#schedule'
                 >
                   Schedule
                 </a>
@@ -34,7 +34,7 @@ const Header = () => {
               <li>
                 <a
                   className='font-mono font-semibold leading-normal text-lg text-white'
-                  href='#prizes'
+                  href='#partner'
                 >
                   Partner
                 </a>
@@ -42,7 +42,7 @@ const Header = () => {
               <li>
                 <a
                   className='font-mono font-semibold leading-normal text-lg text-white '
-                  href='#prizes'
+                  href='#faq'
                 >
                   FAQs
                 </a>
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </nav>
         <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex'>
-          <button className='m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-  border  capitalize hover:bg-color-2 font-mono text-lg font-bold'>
+          <button className='m-2 p-4 rounded-lg bg-color-3  border  capitalize hover:bg-gradient-to-r from-color-1 to-color-3font-mono text-lg font-bold'>
             register now
           </button>
         </div>
