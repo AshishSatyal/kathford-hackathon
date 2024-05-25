@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { motion } from 'framer-motion';
 
 // variant for accordion header...
-const variantHeader = {
+const variants = {
   offscreen: {
     y: 44,
     opacity: 0,
@@ -16,12 +16,13 @@ const variantHeader = {
     opacity: 1,
     transition: {
       ease: "linear",
+      type: "spring",
     }
   }
 };
 
 const Accordion = (props) => {
-  const { idx, expanded, setExpanded } = props;
+  const { idx, item, expanded, setExpanded } = props;
 
   const isOpen = (idx === expanded);
 
@@ -34,23 +35,26 @@ const Accordion = (props) => {
       className='accordion'
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0.8 }}
+      variants={variants}
+      viewport={{ 
+        once: true, 
+        amount: 0.8 
+      }}
     >
       <motion.button
        className={`accordion-header ${isOpen ? "active": ""}
       `}
         onClick={expandAccordion}
-        variants={variantHeader}
       >
         <span>
-          How long is the KathCode event?
+          {item.question}
         </span>
         <span className={`${!isOpen ? "accordion-close" : ""}`}>
           <IoClose />
         </span>
       </motion.button>
       {isOpen && <div className="accordion-body">
-        It is a 48 hour event to be held on the Kathford premises.
+        {item.answer}
       </div>}
     </motion.div>
   )
