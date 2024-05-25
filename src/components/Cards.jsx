@@ -9,6 +9,15 @@ import {
 const Cards = ({ position, prize, other, img, bg }) => {
   const ROTATION_RANGE = 40;
 
+  const variants = {
+    initial: { x: -10, opacity: 0 },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 100, delay: 0.5 },
+    },
+  };
+
   const HALF_ROTATION_RANGE = 40 / 2;
 
   const ref = useRef(null);
@@ -58,6 +67,19 @@ const Cards = ({ position, prize, other, img, bg }) => {
       className={`p-5 sm:h-72 lg:h-60 rounded-xl ${bg} w-[70%] lg:w-[30%] box-card`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      initial='initial'
+      whileInView={"animate"}
+      viewport={{
+        once: true,
+      }}
+      variants={{
+        initial: { scale: 0, opacity: 0 },
+        animate: {
+          scale: 1,
+          opacity: 1,
+          transition: { type: "spring", delay: 0.2 },
+        },
+      }}
     >
       <div className='flex flex-col items-start px-5'>
         <div className='flex items-center justify-between'>
