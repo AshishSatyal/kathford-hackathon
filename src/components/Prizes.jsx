@@ -2,12 +2,14 @@ import React from "react";
 import second from "../assets/second.svg";
 import winner from "../assets/winner.svg";
 import third from "../assets/third.svg";
+
 import Cards from "./Cards";
+import PrizeBanner from "./PrizeBanner";
 
 const Prizes = () => {
   return (
     <div className='bg-color-2 min-h-[85vh] py-5 lg:px-10'>
-      <div className='my-5 text-center '>
+      <div className='my-2 text-center '>
         <p className='text-white text-3xl lg:text-5xl capitalize font-semibold font-[robotomono]'>
           prizes
         </p>
@@ -42,6 +44,7 @@ const Prizes = () => {
           img={third}
         />
       </div>
+      <PrizeBanner />
     </div>
   );
 };

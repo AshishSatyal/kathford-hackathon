@@ -9,15 +9,6 @@ import {
 const Cards = ({ position, prize, other, img, bg }) => {
   const ROTATION_RANGE = 40;
 
-  const variants = {
-    initial: { x: -10, opacity: 0 },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: { type: "spring", stiffness: 100, delay: 0.5 },
-    },
-  };
-
   const HALF_ROTATION_RANGE = 40 / 2;
 
   const ref = useRef(null);
