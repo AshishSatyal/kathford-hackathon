@@ -26,6 +26,7 @@ const Prizes = () => {
           other={"medals & Certificate"}
           img={winner}
         />
+
         <Cards
           bg={"bg-gradient-to-r from-color-1/50 to-color-3/70"}
           position={"1st runner up"}
