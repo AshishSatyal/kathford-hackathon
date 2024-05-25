@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { motion } from 'framer-motion';
 
 // variant for accordion header...
-const variantHeader = {
+const variants = {
   offscreen: {
     y: 44,
     opacity: 0,
@@ -34,13 +34,13 @@ const Accordion = (props) => {
       className='accordion'
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: false, amount: 0.8 }}
+      variants={variants}
+      viewport={{ once: true, amount: 0.8 }}
     >
       <motion.button
        className={`accordion-header ${isOpen ? "active": ""}
       `}
         onClick={expandAccordion}
-        variants={variantHeader}
       >
         <span>
           How long is the KathCode event?
