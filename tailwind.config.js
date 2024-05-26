@@ -8,7 +8,8 @@ export default {
           1: "#05bc64", // accent-color (green range)
           2: "#27445c", // blue range
           3: "#3c536c", // blue range light version
-          4: "#232323", // dark color (currently use for bg)
+          4: "#232323",
+          5: "#201c1c", // dark color (currently use for bg)
         },
       },
     },

@@ -15,3 +15,7 @@
 
 body {
 }
+
+.register:hover {
+  box-shadow: #05bc64 0px 4px 12px;
+}
