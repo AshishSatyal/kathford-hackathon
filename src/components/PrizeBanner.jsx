@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const PrizeBanner = () => {
   return (
     <motion.div
-      className='bg-color-3/100 lg:w-full sm:w-54 sm:h-40 p-10 rounded-xl my-5'
+      className='bg-color-3/100 sm:h-40 p-10 rounded-xl my-10'
       initial='initial'
       whileInView={"animate"}
       viewport={{
