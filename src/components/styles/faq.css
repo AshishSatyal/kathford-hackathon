@@ -1,65 +1,12 @@
-.faq-main {
-    max-width: 1200px;
-    @apply text-white flex flex-col items-center justify-center md:flex-row md:items-start py-4 px-20 my-8 gap-4 mx-auto;
-}
-
 .faq-main > * {
     @apply flex-grow;
 }
 
 .faq-nav {
     flex-basis: 40%;
-    @apply flex md:flex-col gap-8 overflow-x-scroll md:overflow-hidden font-medium capitalize py-4;
 
-    
-    width: 100%;
+    @apply md:flex-col md:overflow-hidden  ;
 }
-
-.faq-nav::-webkit-scrollbar {
-    width: 100%;
-    height: 6px;
-}
-
-.faq-nav::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.4);
-    @apply rounded-full;
-
-}
-
-.faq-nav-item {
-    @apply flex gap-2 items-center cursor-pointer;
-}
-
-.faq-nav-item > * {
-    @apply transition-all duration-300 ease-out;
-}
-
-.faq-nav-item:hover {
-    @apply text-white/80
-}
-
-.faq-nav-item:hover .faq-item-icon {
-    @apply bg-white/80;
-}
-
-.faq-nav-item.active .faq-item-icon {
-    @apply text-white;
-
-    background: linear-gradient(to right, #05bc64, #27445c);
-}
-
-.faq-nav-item.active p {
-    @apply text-color-1;
-}
-
-.faq-item-icon {
-    @apply text-color-4 bg-white p-[10px] rounded-full;
-}
-
-.faq-nav-item > p {
-    width: max-content;
-}
-
 .accordion-container {
     /* background: linear-gradient(-45deg, hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 100%, 0.2)); */
     /* background: linear-gradient(-45deg, #27445c, hsl(151, 95%, 38%)); */
@@ -67,5 +14,5 @@
     max-width: 888px;
     flex-basis: 60%;
 
-    @apply rounded-md mx-auto md:mx-0 px-4 my-8 md:my-0;
+    @apply rounded-md mx-auto md:mx-0  my-8 md:my-0;
 }

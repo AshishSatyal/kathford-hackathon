@@ -5,22 +5,10 @@ import './styles/faq.css';
 import { FaRegCalendarAlt, FaRegCalendarCheck, FaRegFileAlt, FaRegFile } from "react-icons/fa";
 
 import data from '../utils/faq';
+import { variantNav } from '../utils/variants';
 
 import { motion } from 'framer-motion';
-
-const variants = {
-  offscreen: {
-    x: -100,
-    opacity: 0,
-  }, 
-  onscreen: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-    }
-  }
-};
+import CenterComponent from './CenterComponent';
 
 const Faq = () => {
   const [currentData, setCurrentData] = useState();
@@ -51,10 +39,11 @@ const Faq = () => {
   const faqNavItems = navs.map(item => {
     return (
       <motion.div 
-        className={`faq-nav-item ${activeFaq === item.id ? 'active': ''}`}
+        key={item.id}
+        className={`body-nav-item faq-nav-item ${activeFaq === item.id ? 'active': ''}`}
         initial="offscreen"
         whileInView="onscreen"
-        variants={variants}
+        variants={variantNav}
         onClick={() => setActiveFaq(item.id)}
         viewport={{ 
           once: true 
@@ -76,22 +65,23 @@ const Faq = () => {
     />
   );
  
-
   return (
-    <section className='py-4 px-4 '>
-      <div className="faq-header text-center my-2">
-        <h1 className='text-color-1/100 font-[robotomono] uppercase text-5xl font-normal'>FAQ</h1>
-        {/* <p className='text-white capitalize my-2 text-sm'>Discover helpful information and explanations to commonly asked questions.</p> */}
-      </div>
-      <div className="faq-main">
-        <div className="faq-nav">
-          {faqNavItems}
+    <CenterComponent>
+      <section className='py-4 px-4 '>
+        <div className="faq-header text-center my-2">
+          <h1 className='text-color-1/100 font-[robotomono] uppercase text-5xl font-normal'>FAQ</h1>
+          {/* <p className='text-white capitalize my-2 text-sm'>Discover helpful information and explanations to commonly asked questions.</p> */}
         </div>
-        <div className="accordion-container">
-          {accordions}
+        <div className="faq-main">
+          <div className="body-nav faq-nav">
+            {faqNavItems}
+          </div>
+          <div className="accordion-container">
+            {accordions}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </CenterComponent>
   )
 }
 

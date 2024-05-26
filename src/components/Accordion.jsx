@@ -1,25 +1,11 @@
 import React from 'react'
 import './styles/accordion.css';
 
+import { variantAccordion } from '../utils/variants';
+
 import { IoClose } from "react-icons/io5";
 
 import { motion } from 'framer-motion';
-
-// variant for accordion header...
-const variants = {
-  offscreen: {
-    y: 44,
-    opacity: 0,
-  },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      ease: "linear",
-      type: "spring",
-    }
-  }
-};
 
 const Accordion = (props) => {
   const { idx, item, expanded, setExpanded } = props;
@@ -35,7 +21,7 @@ const Accordion = (props) => {
       className='accordion'
       initial="offscreen"
       whileInView="onscreen"
-      variants={variants}
+      variants={variantAccordion}
       viewport={{ 
         once: true, 
         amount: 0.8 
