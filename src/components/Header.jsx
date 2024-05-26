@@ -9,7 +9,13 @@ const Header = () => {
       <div className='flex items-center xl:px-10'>
         <div>
           <a href='#hero' className='block w-[12rem] xl:mr-8 '>
-            <img src={kathCode} alt='logo' width={200} height={40} />
+            <img
+              src={kathCode}
+              alt='logo'
+              width={200}
+              height={40}
+              // className='sm:w-[5rem] lg:w-[18rem]'
+            />
           </a>
         </div>
         <nav className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex lg:mx-auto'>

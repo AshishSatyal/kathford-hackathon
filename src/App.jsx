@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Faq from "./components/Faq";
 import Prizes from "./components/Prizes";
 import Tracks from "./components/Tracks";
+import Schedule from "./components/Schedule";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Prizes />
       <Tracks />
+      <Schedule />
       <Faq />
     </>
   );
