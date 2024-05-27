@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Dayplan = ({ day }) => {
   return (
     <motion.div
-      className='bg-color-3/90 lg:w-[40%] sm:w-[70%] rounded-xl p-5'
+      className='bg-color-2 lg:w-[40%] sm:w-[70%] rounded-xl p-5'
       initial='initial'
       whileInView={"animate"}
       viewport={{
@@ -19,7 +19,7 @@ const Dayplan = ({ day }) => {
         },
       }}
     >
-      <p className='text-white text-center capitalize text-3xl font-[robotomono] border-b'>
+      <p className='text-white text-center capitalize text-3xl font-[robotomono] pb-4 border-b'>
         {day}
       </p>
       <div className='flex flex-col items-start justify-evenly mt-5 p-2 text-white'>

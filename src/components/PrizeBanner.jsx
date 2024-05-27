@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const PrizeBanner = () => {
   return (
     <motion.div
-      className='bg-color-3/100 sm:h-40 p-10 rounded-xl my-10'
+      className='bg-color-3/100 sm:h-40 p-10 rounded-xl m-10'
       initial='initial'
       whileInView={"animate"}
       viewport={{
@@ -21,8 +21,8 @@ const PrizeBanner = () => {
         },
       }}
     >
-      <div className='flex items-center justify-between px-10'>
-        <div>
+      <div className='flex items-center justify-between lg:px-10'>
+        <div className='mr-4'>
           <img
             className='rotate-12'
             src={gift1}
