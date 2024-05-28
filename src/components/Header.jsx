@@ -40,9 +40,9 @@ const Header = () => {
               <li>
                 <a
                   className='font-mono font-semibold leading-normal text-lg text-white'
-                  href='#partner'
+                  href='#partners'
                 >
-                  Partner
+                  Partners
                 </a>
               </li>
               <li>

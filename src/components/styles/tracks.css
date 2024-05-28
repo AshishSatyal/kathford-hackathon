@@ -44,7 +44,7 @@
 }
 
 .track-info {
-    @apply md:basis-3/5 py-2;
+    @apply md:basis-3/5 py-2 mt-2 md:mt-4 lg:mt-6;
 }
 
 .track-info h4 {
