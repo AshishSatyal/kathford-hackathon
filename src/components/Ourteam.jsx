@@ -14,7 +14,7 @@ const Ourteam = () => {
           once: true,
         }}
         variants={variantNav}
-        className='w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
+        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
         key={item.id}
       >
         <div className='team-img' style={{ height: "100%" }}>
@@ -41,12 +41,12 @@ const Ourteam = () => {
 
   return (
     <CenterComponent>
-      <div className='min-h[85vh] flex flex-col justify-around'>
+      <div className='min-h[85vh][x] flex flex-col justify-around'>
         <div className='my-5'>
           <p className='text-white text-4xl font-mono text-center'>Our Team</p>
         </div>
 
-        <div className='flex lg:flex-row sm:flex-col flex-wrap justify-around items-center'>
+        <div className='flex flex-col lg:flex-row flex-wrap justify-around items-center'>
           {team}
         </div>
       </div>

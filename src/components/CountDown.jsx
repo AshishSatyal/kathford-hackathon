@@ -10,10 +10,26 @@ const CountDown = () => {
 
   const startTimer = () => {
     const time = countDownDate - Date.now();
-    serTimerDays(Math.floor(time / (1000 * 60 * 60 * 24)));
-    serTimerHours(Math.floor((time / (1000 * 60 * 60)) % 24));
-    serTimerMinutes(Math.floor((time / 1000 / 60) % 60));
-    serTimerSeconds(Math.floor((time / 1000) % 60));
+    serTimerDays(
+      Math.floor(time / (1000 * 60 * 60 * 24))
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerHours(
+      Math.floor((time / (1000 * 60 * 60)) % 24)
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerMinutes(
+      Math.floor((time / 1000 / 60) % 60)
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerSeconds(
+      Math.floor((time / 1000) % 60)
+        .toString()
+        .padStart(2, "0")
+    );
   };
   useEffect(() => {
     const interval = setInterval(() => startTimer(), 1000);

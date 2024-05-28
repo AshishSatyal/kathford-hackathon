@@ -3,7 +3,7 @@ import CountDown from "./CountDown";
 
 const Hero = () => {
   return (
-    <div className='bg-color-5 min-h-[85vh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
+    <div className='bg-color-5 min-h-[100vh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
       <div className='w-2/3'>
         <p className='text-color-1/100 text-center lg:text-6xl text-3xl font-normal font-mono capitalize'>
           <span className='text-white font-[robotomono] uppercase block pb-2'>
