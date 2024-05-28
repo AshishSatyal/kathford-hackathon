@@ -1,23 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { variantNav } from "../utils/variants";
 
 const Dayplan = ({ day }) => {
   return (
     <motion.div
-      className='bg-color-2 lg:w-[40%] sm:w-[70%] rounded-xl p-5'
-      initial='initial'
-      whileInView={"animate"}
+      className='bg-color-3/90 lg:w-[40%] sm:w-[70%] rounded-xl p-5'
+      initial='offscreen'
+      whileInView={"onscreen"}
       viewport={{
         once: true,
       }}
-      variants={{
-        initial: { scale: 0, opacity: 0 },
-        animate: {
-          scale: 1,
-          opacity: 1,
-          transition: { type: "spring", delay: 0.2 },
-        },
-      }}
+      variants={variantNav}
     >
       <p className='text-white text-center capitalize text-3xl font-[robotomono] pb-4 border-b'>
         {day}

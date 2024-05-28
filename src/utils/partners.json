@@ -1,0 +1,88 @@
+{
+    "partners": [
+        {
+            "id": 1,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Khalti",
+            "type": "gold",
+            "image": "khalti.jpg"
+        }
+    ]
+}

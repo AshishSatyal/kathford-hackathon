@@ -21,7 +21,7 @@ const data = [
         "id": 3,
         "categoryId": 1,
         "question": "What should I bring to Kathcode?",
-        "answer": "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relrentless innovation."
+        "answer": "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relentless innovation."
     },
     {
         "id": 4,
@@ -63,7 +63,7 @@ const data = [
         "id": 10,
         "categoryId": 3,
         "question": "What about APIs?",
-        "answer": "ou are permitted to use either your own or third-party APIs, provided that your project is entirely original and has not been used before."
+        "answer": "You are permitted to use either your own or third-party APIs, provided that your project is entirely original and has not been used before."
     }, 
     {
         "id": 11,

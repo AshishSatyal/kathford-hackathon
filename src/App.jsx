@@ -6,6 +6,7 @@ import Prizes from "./components/Prizes";
 import Tracks from "./components/Tracks";
 import Schedule from "./components/Schedule";
 import Ourteam from "./components/Ourteam";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Schedule />
       <Ourteam />
       <Faq />
+      <Partners />
     </>
   );
 }

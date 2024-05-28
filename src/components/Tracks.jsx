@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import './styles/tracks.css';
 
-import { BsDatabase } from "react-icons/bs";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { LuPlaneTakeoff } from "react-icons/lu";
+import { RiHeartPulseLine } from "react-icons/ri";
+import { HiOutlineBookOpen } from "react-icons/hi2";
+import { FaCubes } from "react-icons/fa6";
+import { PiCity } from "react-icons/pi";
+import { IoMdGlobe } from "react-icons/io";
+import { GrCubes } from "react-icons/gr";
 
 import data from '../utils/tracks'; // tracks data...
 import { variantNav } from '../utils/variants';
@@ -12,7 +19,8 @@ import CenterComponent from './CenterComponent';
 import TrackCard from './TrackCard';
 
 
-const trackIcons = [<BsDatabase size={20} />, <BsDatabase size={20} />, <BsDatabase size={20} />, <BsDatabase size={20} />, <BsDatabase size={20} />, <BsDatabase size={20} />, <BsDatabase size={20} />];
+
+const trackIcons = [<LuPlaneTakeoff size={20} />, <RiHeartPulseLine size={20} />, <HiOutlineBookOpen size={20} />, <BsGraphUpArrow size={20} />, <FaCubes size={20} />, <PiCity size={20} />, <IoMdGlobe size={20} />];
 
 const Tracks = () => {
   const [currentTrackData, setCurrentTrackData] = useState();

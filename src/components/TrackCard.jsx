@@ -1,10 +1,22 @@
 import React from 'react'
-import { formatCurrency } from '../utils/formatCurrency';
+
+import { variantNav } from '../utils/variants';
+
+import { motion } from 'framer-motion';
 
 const TrackCard = (props) => {
     const {icon, data} = props;
   return (
-    <div className="track-details-container">
+    <motion.div 
+      key={data?.id}
+      initial='offscreen'
+      whileInView='onscreen'
+      variants={variantNav}
+      className="track-details-container"
+      viewport={{
+        once: true,
+      }}
+    >
         <div className="track-details">
             <div className='track-icon'>
                 { icon }
@@ -14,11 +26,11 @@ const TrackCard = (props) => {
             <p>{ data?.description }</p>
             </div>
         </div>
-        <div className="track-reward">
+        {/* <div className="track-reward">
           <h4>winner gets</h4>
           <p>{ formatCurrency(data?.reward) }</p>
-        </div>
-    </div>
+        </div> */}
+    </motion.div>
   )
 }
 

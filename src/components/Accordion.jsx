@@ -18,6 +18,7 @@ const Accordion = (props) => {
 
   return (
     <motion.div
+      key={item?.question}
       className='accordion'
       initial="offscreen"
       whileInView="onscreen"
@@ -33,14 +34,14 @@ const Accordion = (props) => {
         onClick={expandAccordion}
       >
         <span>
-          {item.question}
+          {item?.question}
         </span>
         <span className={`${!isOpen ? "accordion-close" : ""}`}>
           <IoClose />
         </span>
       </motion.button>
       {isOpen && <div className="accordion-body">
-        {item.answer}
+        {item?.answer}
       </div>}
     </motion.div>
   )
