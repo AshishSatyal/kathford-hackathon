@@ -24,7 +24,7 @@ const Prizes = () => {
         <Cards
           bg={"bg-gradient-to-r from-color-1 to-color-3"}
           position={"#1 Winner"}
-          prize={"Rs.50000"}
+          prize={"Rs.35000"}
           other={"medals & Certificate"}
           img={winner}
         />
