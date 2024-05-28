@@ -2,7 +2,7 @@ import React from "react";
 import Teams from "../utils/team";
 import CenterComponent from "./CenterComponent";
 import { motion } from "framer-motion";
-// import variantNav from "../utils/variants";
+import { variantNav } from "../utils/variants";
 
 const Ourteam = () => {
   const team = Teams.map((item) => {
@@ -13,6 +13,7 @@ const Ourteam = () => {
         viewport={{
           once: true,
         }}
+        variants={variantNav}
         className='w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
         key={item.id}
       >
