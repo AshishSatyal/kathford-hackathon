@@ -3,7 +3,7 @@
   width: max-content;
   height: 100%;
   transform: translateY(80px);
-  @apply flex flex-wrap list-none justify-center items-center w-full p-0 border-2 border-red-500;
+  @apply flex flex-wrap list-none justify-center items-center w-full p-0;
 
   perspective: 300px;
   transform-style: preserve-3d;
@@ -11,10 +11,7 @@
 
 .honeycomb-cell
 {
-  /* -webkit-box-flex: 0; */
   @apply flex-grow-0 flex-shrink basis-[250px] max-w-[250px] h-[137.5px] mt-[65.4px] mx-[12.5px] mb-[25px] relative p-[0.5rem] text-center z-10 transition-all duration-300 ease-in-out;
-  
-  /*  box shadow to be changed... */
 }
 
 .honeycomb-cell:hover {
@@ -27,14 +24,10 @@
 }
 .honeycomb-cell_img
 {
-  filter: grayscale(100%);
-
   @apply object-cover object-center;
 }
 .honeycomb-cell_title
 {
-    -webkit-hyphens: auto;
-    hyphens: auto;
     transition: opacity 300ms;
 
     @apply h-full flex flex-col items-center justify-center break-all uppercase text-2xl text-white font-bold;
@@ -55,28 +48,14 @@
 .honeycomb-cell::before
 {
     @apply bg-white scale-[0];
-    /* @apply bg-white scale-[1.055]; */
 }
-.honeycomb-cell::after
-{
-    transition: opacity 300ms;
-    
-    @apply bg-black opacity-70;
-}
+
 .honeycomb-cell:hover
 .honeycomb-cell_title
 {
     @apply opacity-0;
 }
-.honeycomb-cell:hover
-.honeycomb-cell_img
-{
-  filter: grayscale(0%);
-}
-/* .honeycomb-cell:hover::before
-{
-  background: #fc5130;
-} */
+
 .honeycomb-cell:hover::after
 {
   opacity: 0;
