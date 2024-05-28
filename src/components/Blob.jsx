@@ -69,17 +69,17 @@ const Blob = () => {
         {`
           #cursor-border {
             background-color:white;
-            height:12rem;
-            width:12rem;
+            height:25rem;
+            width:25rem;
             aspect-ratio:1;
             position:fixed;
             left:50%;
             top:50%;
             translate: -50% -50%;
             border-radius:50%;
-            background:linear-gradient(to right, aquamarine, mediumpurple);
+            background:linear-gradient(to right, blue,#05bc64 );
            filter: blur(100px);
-      
+           opacity: 0.3;
           }
 
         
