@@ -14,14 +14,37 @@
   @apply flex-grow-0 flex-shrink basis-[250px] max-w-[250px] h-[137.5px] mt-[65.4px] mx-[12.5px] mb-[25px] relative p-[0.5rem] text-center z-10 transition-all duration-300 ease-in-out;
 }
 
-.honeycomb-cell:hover {
-    box-shadow: 0px 10px 100px 10px gold;
-    transform: translateZ(-80px);
+.honeycomb-cell:hover,
+.honeycomb-cell:focus {
+  box-shadow: 0px 10px 100px 10px black;
+  transform: translateZ(-80px);
 }
 
 .honeycomb-cell:not(:hover) {
-    transform: translateZ(-100px);
+  transform: translateZ(-100px);
 }
+
+.tooltip-text {
+  width: max-content;
+  transform: translateZ(100px);
+
+  @apply invisible bg-black/60  text-white text-center rounded-md py-4 px-2 absolute z-10 bottom-[150%] right-[0%] ml-[-60%] text-3xl ;
+}
+
+.honeycomb-cell .tooltip-text::after {
+  content: "";
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+  transform: translateX(-25%);
+
+  @apply absolute top-[100%] left-[50%] ml-[-5px];
+}
+
+.honeycomb-cell:hover .tooltip-text {
+  @apply visible;
+}
+
 .honeycomb-cell_img
 {
   @apply object-cover object-center;
@@ -93,6 +116,10 @@
 @media (min-width: 825px) {
     .honeycomb {
         transform: rotate3d(1, 1, 1, -10deg);
+    }
+
+    .tooltip-text {
+      transform: rotate3d(1, 1, 1, 10deg);
     }
 }
 

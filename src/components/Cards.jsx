@@ -52,7 +52,7 @@ const Cards = ({ position, prize, other, img, bg }) => {
     <motion.div
       // ref={ref}
       // style={{ transformStyle: "preserve-3d", transform }}
-      className={`p-5 sm:h-72 lg:h-60 rounded-xl ${bg} w-[70%] lg:w-[30%] box-card`}
+      className={`p-5 sm:h-70 lg:h-60 rounded-xl ${bg} w-[70%] lg:w-[30%] box-card`}
       // onMouseMove={handleMouseMove}
       // onMouseLeave={handleMouseLeave}
       initial='offscreen'

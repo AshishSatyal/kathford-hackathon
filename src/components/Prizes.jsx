@@ -8,7 +8,7 @@ import PrizeBanner from "./PrizeBanner";
 
 const Prizes = () => {
   return (
-    <div id="prizes" className='bg-color-5 min-h-[80vh] py-5 lg:px-10'>
+    <div id="prizes" className='bg-color-5 py-5 lg:px-10'>
       <div className='my-2 text-center '>
         <p className='text-white text-3xl lg:text-5xl capitalize font-semibold font-[robotomono]'>
           prizes

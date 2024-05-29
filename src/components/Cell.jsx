@@ -9,8 +9,8 @@ const Cell = ({ src, alt_text }) => {
         className='block w-full h-[200%] mt-[-50px]'>
 
         {/* if silver the box-shadow will be silver */}
-        
-        <img src={src} alt={alt_text} className="honeycomb-cell_img " width={100} height={100}/>
+          <span className="tooltip-text">{"Khalti"}</span>
+          <img src={src} alt={alt_text} className="honeycomb-cell_img " width={100} height={100}/>
       </a>
         {/* <div className="honeycomb-cell_title">Khalti</div> */}
     </li>

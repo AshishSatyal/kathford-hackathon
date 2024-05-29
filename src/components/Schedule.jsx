@@ -4,7 +4,7 @@ import CenterComponent from "./CenterComponent";
 
 const Schedule = () => {
   return (
-    <div id='schedule' className='bg-color-2 min-h-[90vh] py-5 lg:px-10'>
+    <div id='schedule' className='bg-color-2 py-5 lg:px-10'>
       <div className='text-center text-xl my-5 '>
         <p className='text-white text-3xl lg:text-5xl capitalize font-semibold font-[robotomono] p-10'>
           Schedule
