@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import kathCode from "/src/assets/kathCode.png";
 import hamBurger from "/src/assets/hamBurger.svg";
 import Navlinks from "./Navlinks";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
+  function toggleNav() {
+    setToggle((prevToggle) => !toggle);
+    console.log(toggle ? "unclick" : "click");
+  }
   return (
     // --Header-container--
     <div className='sticky top-0 px-[2.5rem] py-4 bg-color-5 min-w-full text-white z-10'>
@@ -19,14 +25,16 @@ const Header = () => {
             />
           </a>
         </div>
-        <Navlinks />
+        <Navlinks toggleState={toggle} />
         <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex'>
-          <button className='register m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-3 capitalize  font-mono text-lg font-bold'>
+          <button className='register m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-3 capitalize text-lg font-bold'>
             register now
           </button>
         </div>
         <div className='lg:hidden ml-auto'>
-          <img src={hamBurger} alt='HamBurger' width={25} height={25} />
+          <button onClick={toggleNav}>
+            <img src={hamBurger} alt='HamBurger' width={25} height={25} />
+          </button>
         </div>
       </div>
     </div>

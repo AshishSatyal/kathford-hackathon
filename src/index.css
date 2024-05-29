@@ -12,9 +12,29 @@
   box-sizing: border-box;
   /* transition: all ease-in-out 200ms; */
 }
+@font-face {
+  font-family: "Archiv";
+  src: url("./assets/fonts/ArchivGroteskTrial-RegularTrial.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "whites";
+  src: url("./assets/fonts/WhyteInktrap-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monument";
+  src: url("./assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
   scroll-behavior: smooth;
+  font-family: "ArchivGrotesk", sans-serif;
 }
 
 body {
@@ -23,4 +43,17 @@ body {
 
 .register:hover {
   box-shadow: #05bc64 0px 4px 12px;
+}
+.hero-text {
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: white;
+  letter-spacing: 2px;
+  font-family: "M";
+}
+.text-top {
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+  letter-spacing: 2px;
+  font-family: "whites";
+  font-size: 24px;
 }

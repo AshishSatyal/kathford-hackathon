@@ -12,12 +12,12 @@ const Prizes = () => {
     <CenterComponent>
       <div id='prizes' className='bg-color-5 min-h-[80vh][x] py-5 lg:px-10'>
         <div className='my-2 text-center '>
-          <p className='text-white text-3xl lg:text-5xl capitalize font-semibold font-[robotomono]'>
+          <p className='text-white text-3xl lg:text-5xl capitalize font-semibold'>
             prizes
           </p>
         </div>
         <div className='p-5 lg:min-w-full'>
-          <p className='text-center text-slate-300 font-normal text-xl lg:text-2xl capitalize font-mono tracking-tight'>
+          <p className='text-center text-slate-300 font-normal text-xl lg:text-2xl capitalize-tight'>
             win from the prize pool of{" "}
             <span className='text-color-1 font-bold text-2xl'>Rs.50000</span>
           </p>

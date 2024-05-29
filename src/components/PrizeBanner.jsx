@@ -32,7 +32,7 @@ const PrizeBanner = () => {
           />
         </div>
         <div>
-          <p className='text-white lg:text-4xl font-mono capitalize'>
+          <p className='text-white lg:text-4xl  capitalize'>
             Many more exciting gifts & swags
           </p>
         </div>

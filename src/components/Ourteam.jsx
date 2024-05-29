@@ -21,7 +21,7 @@ const Ourteam = () => {
           <img className='rounded-xl' src={item.image.human} />
         </div>
         <div className='text-center mt-10'>
-          <p className='text-2xl text-color-1 font-mono'>{item.name}</p>
+          <p className='text-2xl text-color-1'>{item.name}</p>
           <p className='p-2 text-white text-xl'>{item.position}</p>
         </div>
       </motion.div>
@@ -43,7 +43,7 @@ const Ourteam = () => {
     <CenterComponent>
       <div className='min-h[85vh][x] flex flex-col justify-around'>
         <div className='my-5'>
-          <p className='text-white text-4xl font-mono text-center'>Our Team</p>
+          <p className='text-white text-4xl text-center'>Our Team</p>
         </div>
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-around items-center'>

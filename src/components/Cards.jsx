@@ -71,7 +71,7 @@ const Cards = ({ position, prize, other, img, bg }) => {
     >
       <div className='flex flex-col items-start px-5 h-[100%]'>
         <div className='flex items-center[x] justify-between'>
-          <p className='font-bold text-4xl font-mono text-slate-200 capitalize'>
+          <p className='font-bold text-4xl  text-slate-200 capitalize'>
             {position}
           </p>
           <img
@@ -83,8 +83,8 @@ const Cards = ({ position, prize, other, img, bg }) => {
           />
         </div>
         <div className='mt-auto'>
-          <p className='text-white pt-5 font-mono text-2xl'>{prize}</p>
-          <p className='text-white pt-5 font-mono text-xl'>{other}</p>
+          <p className='text-white pt-5 font-bold text-2xl'>{prize}</p>
+          <p className='text-white pt-5 text-2xl'>{other}</p>
         </div>
       </div>
     </motion.div>

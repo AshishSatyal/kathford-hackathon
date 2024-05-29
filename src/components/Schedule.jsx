@@ -10,10 +10,10 @@ const Schedule = () => {
         className='bg-color-5 min-h-[90vh][x] py-5 lg:px-10[x] pb-28'
       >
         <div className='text-center text-xl my-5 '>
-          <p className='text-white text-3xl lg:text-5xl capitalize font-semibold font-[robotomono] p-10'>
+          <p className='text-white text-3xl lg:text-5xl capitalize font-semibold p-10'>
             Schedule
           </p>
-          <p className='text-slate-300 font-mono mb-10'>
+          <p className='text-slate-300 text-2xl mb-10'>
             Events starts from june27 to june28
           </p>
         </div>
