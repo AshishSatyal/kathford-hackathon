@@ -31,9 +31,6 @@ const Header = () => {
 
         <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex'>
           <Button label={ "register now" } />
-          {/* <button className='register m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-3 capitalize text-lg font-bold'>
-            register now
-          </button> */}
         </div>
         <div className='lg:hidden ml-auto'>
           <button onClick={toggleNav}>

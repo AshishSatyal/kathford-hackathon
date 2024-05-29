@@ -30,7 +30,6 @@ const Hero = () => {
         </button> */}
         {/* <Button label={ "discord" } /> */}
         <ButtonWithIcon icon={discord} label={"discord"}/>
-        
       </div>
     </div>
   );
