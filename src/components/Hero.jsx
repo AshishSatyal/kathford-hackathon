@@ -3,15 +3,15 @@ import CountDown from "./CountDown";
 
 const Hero = () => {
   return (
-    <div className='bg-color-5 min-h-[85vh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
+    <div className='bg-color-5 min-h-[100vh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
       <div className='w-2/3'>
-        <p className='text-color-1/100 text-center lg:text-6xl text-3xl font-normal font-mono capitalize'>
-          <span className='text-white font-[robotomono] uppercase block pb-2'>
+        <p className='text-color-1/100 text-center lg:text-6xl text-3xl font-normal capitalize text-top'>
+          <span className='text-white uppercase block pb-2 hero-text text-7xl'>
             unleash your talent
           </span>
           Build the future.
         </p>
-        <p className='text-white/70 text-md font-semibold text-center mt-7 font-mono'>
+        <p className='text-white/70 text-md font-semibold text-center mt-7 '>
           Innovators and problem-solvers,unite! This hackathon <br />
           challenges you to turn your idea into solutions.
         </p>

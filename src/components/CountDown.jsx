@@ -10,10 +10,26 @@ const CountDown = () => {
 
   const startTimer = () => {
     const time = countDownDate - Date.now();
-    serTimerDays(Math.floor(time / (1000 * 60 * 60 * 24)));
-    serTimerHours(Math.floor((time / (1000 * 60 * 60)) % 24));
-    serTimerMinutes(Math.floor((time / 1000 / 60) % 60));
-    serTimerSeconds(Math.floor((time / 1000) % 60));
+    serTimerDays(
+      Math.floor(time / (1000 * 60 * 60 * 24))
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerHours(
+      Math.floor((time / (1000 * 60 * 60)) % 24)
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerMinutes(
+      Math.floor((time / 1000 / 60) % 60)
+        .toString()
+        .padStart(2, "0")
+    );
+    serTimerSeconds(
+      Math.floor((time / 1000) % 60)
+        .toString()
+        .padStart(2, "0")
+    );
   };
   useEffect(() => {
     const interval = setInterval(() => startTimer(), 1000);
@@ -23,12 +39,12 @@ const CountDown = () => {
   return (
     <div className='flex text-center items-center max-h-40'>
       <div>
-        <p className='text-md text-slate-400 font-mono font-semibold capitalize'>
+        <p className='text-md text-slate-400 font-semibold capitalize'>
           Event starts in:
         </p>
       </div>
       <div className='ml-5'>
-        <p className='text-3xl font-bold text-white font-mono pb-1'>{`${timerDays}:${timerHours}:${timerMinutes}:${timerSecods}`}</p>
+        <p className='text-3xl font-bold text-white pb-1'>{`${timerDays}:${timerHours}:${timerMinutes}:${timerSecods}`}</p>
       </div>
     </div>
   );
