@@ -1,7 +1,7 @@
-import React from "react";
-import second from "../assets/second.svg";
-import winner from "../assets/winner.svg";
-import third from "../assets/third.svg";
+import React from 'react';
+import second from '../assets/second.svg';
+import winner from '../assets/winner.svg';
+import third from '../assets/third.svg';
 
 import Cards from "./Cards";
 import PrizeBanner from "./PrizeBanner";
