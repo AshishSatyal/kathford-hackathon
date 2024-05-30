@@ -7,6 +7,7 @@ import Tracks from "./components/Tracks";
 import Schedule from "./components/Schedule";
 import Ourteam from "./components/Ourteam";
 import Partners from "./components/Partners";
+import SideNav from "./components/SideNav";
 
 function App() {
   return (
