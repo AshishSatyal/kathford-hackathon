@@ -3,13 +3,13 @@
 }
 
 .track-nav-item {
-    @apply bg-color-3/60 px-2 py-4 rounded-md md:p-0 md:w-[60px] md:h-[60px] md:inline-block md:overflow-hidden md:min-w-[60px] md:min-h-[60px] transition-all duration-300 ease-out;
+    @apply bg-color-3/60 px-2 py-4 rounded-md md:p-0 md:w-[60px] md:h-[60px] md:inline-block md:overflow-hidden md:min-w-[60px] md:min-h-[60px] float-left transition-all duration-500 ease-out;
 }
 
 .track-nav-item:hover,
 .track-nav-item.active {
     min-width: max-content;
-    @apply md:inline-flex  md:px-4 bg-color-3;
+    @apply md:inline-flex md:px-4 bg-color-3;
 }
 
 .track-nav-item .track-icon > * {

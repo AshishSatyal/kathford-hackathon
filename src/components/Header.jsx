@@ -4,6 +4,7 @@ import hamBurger from "/src/assets/hamBurger.svg";
 import Navlinks from "./Navlinks";
 import useScrollPosition from "../hook/useScrollPosition";
 import SideNav from "./SideNav";
+import Button from "./Button";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,13 +14,13 @@ const Header = () => {
   const isHidden = scrollValue > 50;
 
   function toggleNav() {
-    setToggle((prevToggle) => !toggle);
+    setToggle((prevToggle) => !prevToggle);
     document.body.classList.add("overflow-hidden");
   }
   return (
     // --Header-container--
     <>
-      <div className='sticky top-0 px-[2.5rem] py-4 bg-color-5 min-w-full text-white z-10'>
+      <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 backdrop-blur-xl'>
         <div className='flex justify-between items-center xl:px-10'>
           <div>
             <a href='#hero' className='block w-[12rem] xl:mr-8 '>
@@ -33,10 +34,9 @@ const Header = () => {
             </a>
           </div>
           <Navlinks scrollState={isHidden} />
+
           <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center'>
-            <button className='register m-2 p-4 rounded-lg bg-gradient-to-r from-color-1 to-color-3 capitalize text-lg font-bold'>
-              register now
-            </button>
+            <Button label={"register now"} />
             <div className={`${isHidden ? "lg:block" : "lg:hidden"} ml-5`}>
               <button onClick={toggleNav}>
                 <img src={hamBurger} alt='HamBurger' width={25} height={25} />

@@ -1,7 +1,7 @@
-import React from "react";
-import second from "../assets/second.svg";
-import winner from "../assets/winner.svg";
-import third from "../assets/third.svg";
+import React from 'react';
+import second from '../assets/second.svg';
+import winner from '../assets/winner.svg';
+import third from '../assets/third.svg';
 
 import Cards from "./Cards";
 import PrizeBanner from "./PrizeBanner";
@@ -10,7 +10,7 @@ import CenterComponent from "./CenterComponent";
 const Prizes = () => {
   return (
     <CenterComponent>
-      <div id='prizes' className='bg-color-5 min-h-[80vh][x] py-5 lg:px-10'>
+      <div id='prizes' className=' min-h-[80vh][x] py-5 lg:px-10'>
         <div className='my-2 text-center '>
           <p className='text-white text-3xl lg:text-5xl capitalize font-semibold'>
             prizes

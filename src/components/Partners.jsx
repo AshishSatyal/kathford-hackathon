@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Cell from './Cell'
 import CenterComponent from './CenterComponent';
 
+import khalti from "/src/assets/khalti.jpg";
 import './styles/partners.css';
 
-const partners = new Array(13).fill(0);
+import axios from 'axios';
 
 const Partners = () => {
-    const cells = partners.map((item, idx) => 
+    const [partnersData, setPartnersData] = useState();
+
+    const getPartnersData = async (url) => {
+        const response = await axios.get(url);
+        const data = await response.data;
+        console.log(data.partners)
+        return data.partners;
+    }
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await getPartnersData('/api/partners.json');
+            setPartnersData(result);
+        };
+
+        fetchData();
+    }, []);
+    
+    const cells = partnersData?.map((item, idx) => 
     <Cell 
-        key={idx}
-        src={'https://blog.khalti.com/wp-content/uploads/2021/01/khalti-icon.png'}
-        alt_text={'Khalti logo'}
+        key={item?.id}
+        src={khalti}
+        alt_text={item?.name}
     />);
   return (
     <CenterComponent>

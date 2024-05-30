@@ -12,6 +12,7 @@
   box-sizing: border-box;
   /* transition: all ease-in-out 200ms; */
 }
+
 @font-face {
   font-family: "Archiv";
   src: url("./assets/fonts/ArchivGroteskTrial-RegularTrial.otf")
@@ -41,21 +42,28 @@ body {
   overflow-x: hidden;
 }
 
-.register:hover {
-  box-shadow: #05bc64 0px 4px 12px;
+.register-btn:hover span:first-child {
+  animation-play-state: paused;
 }
+
 .hero-text {
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: white;
-  letter-spacing: 2px;
-  font-family: "M";
+  letter-spacing: 6px;
+  font-family: "monument";
 }
 .text-top {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white; */
   letter-spacing: 2px;
-  font-family: "whites";
+  font-family: "Archiv";
   font-size: 24px;
+  font-weight: 700;
+}
+
+.discord-icon {
+  filter: grayscale(75%);
+  transition: filter 300ms ease-out;
 }
 .overlay {
   position: fixed;
@@ -71,4 +79,8 @@ body {
   /* visibility: hidden; */
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
+}
+
+.discord-btn:hover .discord-icon {
+  filter: grayscale(0%);
 }
