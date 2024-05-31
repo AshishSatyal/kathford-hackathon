@@ -13,7 +13,7 @@ const Header = () => {
   }
   return (
     // --Header-container--
-    <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 backdrop-blur-xl'>
+    <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 '>
       <div className='flex items-center xl:px-10'>
         <div>
           <a href="#hero" className="block w-[12rem] xl:mr-8 ">

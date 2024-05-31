@@ -115,7 +115,7 @@
 
 @media (min-width: 825px) {
     .honeycomb {
-        transform: rotate3d(1, 1, 1, -10deg);
+        transform: rotate3d(1, 1, -0.5, 60deg);
     }
 
     .tooltip-text {

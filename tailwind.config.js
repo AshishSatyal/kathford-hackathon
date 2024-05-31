@@ -44,7 +44,18 @@ export default {
         {
           "bg-grid": (value) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+              // `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}">
+              <defs>
+                <radialGradient id="grad1" cx="50%" cy="0%" r="50%" fx="50%" fy="0%">
+                  <stop offset="0%" style="stop-color:${value};stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:${value};stop-opacity:0" />
+                </radialGradient>
+              </defs>
+              <rect width="32" height="32" fill="url(#grad1)" />
+              <path d="M0 .5H31.5V32" stroke="${value}" />
+            </svg>
+            `
             )}")`,
           }),
           "bg-grid-small": (value) => ({
