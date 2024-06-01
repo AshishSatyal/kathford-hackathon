@@ -2,24 +2,17 @@ import React from "react";
 import gift1 from "../assets/gift1.svg";
 import gift2 from "../assets/gift2.svg";
 import { motion } from "framer-motion";
-
+import { variantNav } from "../utils/variants";
 const PrizeBanner = () => {
   return (
     <motion.div
       className='bg-color-3/100 sm:h-40 p-10 rounded-xl m-10'
-      initial='initial'
-      whileInView={"animate"}
+      initial='offscreen'
+      whileInView={"onscreen"}
       viewport={{
         once: true,
       }}
-      variants={{
-        initial: { scale: 0, opacity: 0 },
-        animate: {
-          scale: 1,
-          opacity: 1,
-          transition: { type: "spring", delay: 0.2 },
-        },
-      }}
+      variants={variantNav}
     >
       <div className='flex items-center justify-between lg:px-10'>
         <div className='mr-4'>
