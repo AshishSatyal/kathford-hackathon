@@ -5,7 +5,7 @@
 .faq-nav {
     flex-basis: 40%;
 
-    @apply md:flex-col md:overflow-hidden  ;
+    @apply md:flex-col overflow-x-scroll md:overflow-hidden ;
 }
 .accordion-container {
     /* background: linear-gradient(-45deg, hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 100%, 0.2)); */

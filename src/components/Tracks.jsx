@@ -28,7 +28,6 @@ const Tracks = () => {
 
   useEffect(() => {
     setCurrentTrackData(() => data.find(item => item.id === activeTrack));
-    console.log("current data ====> ", currentTrackData);
   }, [activeTrack]);
 
   const trackNavItems = data?.map((item, idx) => {
@@ -44,7 +43,10 @@ const Tracks = () => {
       //   once: true,
       // }}
       >
-        <div className='track-icon'>{ trackIcons[idx] }</div>
+        <div className='track-icon relative '>
+          { trackIcons[idx] }
+          <span className="tooltip-text top-0">{ item?.title }</span>
+        </div>
         <span>{item.title}</span>
       </motion.div>
     )
@@ -54,7 +56,7 @@ const Tracks = () => {
     <CenterComponent>
         <section className='py-4 px-4 '>
         <div className="faq-header text-center my-2">
-          <h1 className='text-color-1/100 font-[robotomono] uppercase text-5xl font-normal'>Tracks</h1>
+          <h1 className='text-color-1/100 uppercase text-5xl font-normal'>Tracks</h1>
         </div>
         <div className="tracks-main">
           <div className="body-nav track-nav">

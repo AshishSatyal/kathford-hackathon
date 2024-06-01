@@ -69,7 +69,7 @@ const Faq = () => {
     <CenterComponent>
       <section id='faq' className='py-4 px-4 '>
         <div className="faq-header text-center my-2">
-          <h1 className='text-color-1/100 font-[robotomono] uppercase text-5xl font-normal'>FAQ</h1>
+          <h1 className='text-color-1/100 uppercase text-5xl font-normal'>FAQ</h1>
           {/* <p className='text-white capitalize my-2 text-sm'>Discover helpful information and explanations to commonly asked questions.</p> */}
         </div>
         <div className="faq-main">

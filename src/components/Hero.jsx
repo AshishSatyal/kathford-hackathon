@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className=' min-h-[100dvh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
         <div className=''>
-          <p className='text-color-1/100 text-center lg:text-6xl text-3xl font-normal capitalize text-top'>
-            <span className='text-white uppercase block pb-2 hero-text text-7xl '>
+          <p className='text-color-1/100 text-center text-xl md:text-3xl lg:text-6xl font-normal capitalize text-top'>
+            <span className='text-white uppercase block pb-2 hero-text text-3xl md:text-7xl '>
               unleash your talent
             </span>
             Build the future.

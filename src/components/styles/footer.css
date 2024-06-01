@@ -1,0 +1,43 @@
+.footer-main {
+    @apply px-12 flex flex-col md:flex-row md:justify-between;
+}
+
+.footer-main h2 {
+    @apply text-xl;
+}
+
+.organizer-info > *,
+.useful-links > *,
+.event-info > * {
+    @apply my-8;
+}
+
+.social-links > ul {
+    @apply list-none flex gap-4 my-2;
+}
+
+.social-links > ul > li {
+    @apply transition-all duration-300 ease-out;
+}
+.social-links > ul > li:hover {
+    @apply text-white/60;
+}
+
+.useful-links ul > * {
+    @apply transition-all duration-300 ease-out;
+}
+.useful-links ul > *:hover {
+    @apply text-white/60;
+}
+
+.event-summary-details {
+    @apply text-sm my-2;
+}
+
+.map-details {
+    @apply my-4;
+}
+
+.map-details iframe {
+    @apply rounded-md md:max-h-[200px];
+}

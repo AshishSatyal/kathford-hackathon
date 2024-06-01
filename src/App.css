@@ -4,7 +4,7 @@
 }
 
 .body-nav {
-    @apply flex gap-8 overflow-x-scroll  font-medium capitalize py-4;
+    @apply flex gap-8 font-medium capitalize py-4;
     
     width: 100%;
 }

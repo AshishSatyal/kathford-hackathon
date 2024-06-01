@@ -8,6 +8,7 @@ import Schedule from './components/Schedule';
 import Ourteam from './components/Ourteam';
 import Partners from './components/Partners';
 import Blob from './components/Blob';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Ourteam />
           <Faq />
           <Partners />
+          <Footer />
         </div>
       </div>
     </>

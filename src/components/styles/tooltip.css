@@ -1,0 +1,22 @@
+.tooltip-text {
+    width: max-content;
+    transform: translateZ(100px);
+  
+    @apply invisible bg-black/60  text-white text-center rounded-md py-4 px-2 absolute z-10 bottom-[150%] right-[0%] ml-[-60%] text-3xl ;
+}
+  
+.honeycomb-cell .tooltip-text::after,
+.track-icon .tooltip-text::after {
+    content: "";
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+    transform: translateX(-25%);
+  
+    @apply absolute top-[100%] left-[50%] ml-[-5px];
+}
+  
+.honeycomb-cell:hover .tooltip-text,
+.track-nav-item:hover .tooltip-text {
+    @apply visible;
+}
