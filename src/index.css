@@ -77,14 +77,18 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(178, 175, 175, 0.8); /* Semi-transparent background */
+  background: rgba(178, 175, 175, 0.6); /* Semi-transparent background */
+  /* opacity: 0.9; */
+  /* visibility: hidden; */
+  display: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+.overlay.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0.9; */
-  /* visibility: hidden; */
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 10;
 }
 
 .discord-btn:hover .discord-icon {

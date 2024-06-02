@@ -1,75 +1,19 @@
 import React, { useRef } from "react";
 import { variantNav } from "../utils/variants";
 import { motion } from "framer-motion";
-
-const Cards = ({ position, prize, other, img, bg }) => {
-  //   const ROTATION_RANGE = 40;
-
-  //   const HALF_ROTATION_RANGE = 40 / 2;
-
-  //   const ref = useRef(null);
-
-  //   const x = useMotionValue(0);
-
-  //   const y = useMotionValue(0);
-
-  //   const xSpring = useSpring(x);
-
-  //   const ySpring = useSpring(y);
-
-  //   const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
-
-  //   const handleMouseMove = (e) => {
-  //     if (!ref.current) return [0, 0];
-
-  //     const rect = ref.current.getBoundingClientRect();
-
-  //     const width = rect.width;
-
-  //     const height = rect.height;
-
-  //     const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
-
-  //     const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
-
-  //     const rX = mouseY / height - HALF_ROTATION_RANGE;
-
-  //     const rY = mouseX / width - HALF_ROTATION_RANGE;
-
-  //     x.set(rX);
-
-  //     y.set(rY);
-  //   };
-
-  //   const handleMouseLeave = () => {
-  //     x.set(0);
-
-  //     y.set(0);
-  //   };
-
+import { EvervaultCard, Icon } from "./EverVaultCard";
+const Cards = ({ position, prize, other, img }) => {
   return (
     <motion.div
-      // ref={ref}
-      // style={{ transformStyle: "preserve-3d", transform }}
-      className={`p-5 sm:h-72 lg:h-60 rounded-xl ${bg} w-[70%] lg:w-[35%] box-card`}
-      // onMouseMove={handleMouseMove}
-      // onMouseLeave={handleMouseLeave}
+      className={`p-5 sm:h-72[] lg:h-60[] rounded-xl w-[70%] lg:w-[35%] box-card -z-0`}
       initial='offscreen'
       whileInView={"onscreen"}
       viewport={{
         once: true,
       }}
-      // variants={{
-      //   initial: { scale: 0, opacity: 0 },
-      //   animate: {
-      //     scale: 1,
-      //     opacity: 1,
-      //     transition: { type: "spring", delay: 0.2 },
-      //   },
-      // }}
       variants={variantNav}
     >
-      <div className='flex flex-col items-start px-5 h-[100%]'>
+      {/* <div className='flex flex-col items-start px-5 h-[100%]'>
         <div className='flex items-center[x] justify-between'>
           <p className='font-bold text-4xl  text-slate-200 capitalize'>
             {position}
@@ -86,6 +30,29 @@ const Cards = ({ position, prize, other, img, bg }) => {
           <p className='text-white pt-5 font-bold text-2xl'>{prize}</p>
           <p className='text-white pt-5 text-2xl'>{other}</p>
         </div>
+      </div> */}
+
+      <div className='border cursor-none z-10 border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]'>
+        <Icon className='absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black' />
+        <Icon className='absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black' />
+        <Icon className='absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black' />
+        <Icon className='absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black' />
+
+        <EvervaultCard text={position} />
+        <img
+          src={img}
+          alt=''
+          width={75}
+          height={100}
+          className='absolute top-4 left-4 '
+        />
+
+        <h2 className='dark:text-white mt-4 text-2xl font-semibold font-[archiv]'>
+          {prize}
+        </h2>
+        <h2 className='dark:text-white mt-4 text-2xl  font-[archiv]'>
+          {other}
+        </h2>
       </div>
     </motion.div>
   );
