@@ -36,7 +36,10 @@ const Header = () => {
           {/* <Navlinks scrollState={isHidden} /> */}
 
           <div className="top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out h-4">
-            {!isHidden && <Button label={'register now'} />}
+            {!isHidden && <Button 
+              label={'register now'}  
+              link={'https://forms.gle/NpdpPh6oXmSSmRVf8'}
+            />}
             <div className={`block ml-5`}>
               <button onClick={toggleNav}>
                 <img src={hamBurger} alt="HamBurger" width={25} height={25} />
