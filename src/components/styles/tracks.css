@@ -68,13 +68,18 @@
     @apply md:basis-3/5 py-2 mt-2 md:mt-4 lg:mt-6;
 }
 
+.track-info ul {
+    list-style-type: square;
+}
+
 .track-info h4 {
     @apply text-[18px] md:text-[20px] lg:text-[24px] font-bold leading-6;
 }
 
-.track-info p {
-    @apply text-[12px] md:text-[14px] lg:text-[18px] font-semibold mt-2;
+.track-info li {
+    @apply text-[12px] md:text-[14px] lg:text-[18px] font-thin mt-4 ml-4;
 }
+
 
 .track-reward {
     @apply md:basis-2/5;
@@ -86,4 +91,12 @@
 
 .track-reward p {
     @apply text-2xl font-bold md:text-4xl;
+}
+
+@keyframes blink {
+    0% {opacity: 0}
+    25% {opacity: 1}
+    50% {opacity: 1}
+    75% {opacity: 0}
+    100% {opacity: 1}
 }

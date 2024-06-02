@@ -23,7 +23,7 @@ const TrackCard = (props) => {
             </div>
             <div className="track-info">
             <h4>{ data?.title }</h4>
-            <p>{ data?.description }</p>
+            <p className='flex items-center gap-2 pt-2 '><span className='size-[5px] bg-white '></span>{ data?.description }</p>
             </div>
         </div>
         {/* <div className="track-reward">

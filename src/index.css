@@ -61,6 +61,12 @@ body {
   font-weight: 700;
 }
 
+.gradient-text > span:last-child {
+  background: linear-gradient(to left, #27445c, #05bc64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .discord-icon {
   filter: grayscale(75%);
   transition: filter 300ms ease-out;

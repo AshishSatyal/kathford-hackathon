@@ -9,17 +9,25 @@ import { FaInstagram, FaFacebook, FaXTwitter, FaDiscord, FaLinkedin } from "reac
 
 import './styles/footer.css';
 
-const socialMediaIcons = [<FaInstagram size={16}/>, <FaFacebook size={16}/>, <FaDiscord size={16}/>, <FaXTwitter size={16}/>, <FaLinkedin size={16}/>];
+const socialMediaIcons = [{
+    'url': 'https://www.facebook.com/profile.php?id=61554820927866',
+    'icon': <FaInstagram size={16}/>
+    }, {
+        'url': 'https://www.facebook.com/profile.php?id=61554820927866',
+        'icon': <FaFacebook size={16}/>
+    }, {
+        'url': 'https://discord.gg/8JRA8bSEPq',
+        'icon': <FaDiscord size={16}/>,
+    }];
 
 const socialMediaLinks = socialMediaIcons.map((item, idx) => (
     <li key={idx}>
-        <a href="">{ item }</a>
+        <a href={item.url}>{ item.icon }</a>
     </li>
 ));
 
 const Footer = () => {
   return (
-    
     <section className='text-white'>
         <div className="footer-main ">
             <div className="organizer-info ">
@@ -94,7 +102,7 @@ const Footer = () => {
                     <div className="event-summary-details">
                         <p>Mode: In-person</p>
                         <p>Venue: Kathrord Block-B</p>
-                        <p>Date: 21<sup>st</sup>-22<sup>nd</sup> June, 2024</p>
+                        <p>Date: 28<sup>th</sup>-29<sup>th</sup> June, 2024</p>
                     </div>
                     <div className="map-details">
                         <h2 className='capitalize mb-2 mt-10'>Visit us at</h2>
@@ -107,7 +115,7 @@ const Footer = () => {
 
             </div>
         </div>
-        <div className='text-center py-2 border-t-[1px] border-white/40'>
+        <div className='text-center py-2 border-t-[1px] border-white/10'>
             <p className='text-sm md:text-xl'>KathCode 2024</p>
             <p className='text-xs md:text-sm'><small>All right reserved ©</small></p>
         </div>
