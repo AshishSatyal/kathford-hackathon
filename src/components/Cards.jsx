@@ -5,7 +5,7 @@ import { EvervaultCard, Icon } from "./EverVaultCard";
 const Cards = ({ position, prize, other, img }) => {
   return (
     <motion.div
-      className={`p-5 sm:h-72[] lg:h-60[] rounded-xl w-[70%] lg:w-[35%] box-card`}
+      className={`p-5 sm:h-72[] lg:h-60[] rounded-xl w-[70%] lg:w-[35%] box-card -z-0`}
       initial='offscreen'
       whileInView={"onscreen"}
       viewport={{
@@ -32,7 +32,7 @@ const Cards = ({ position, prize, other, img }) => {
         </div>
       </div> */}
 
-      <div className='border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]'>
+      <div className='border cursor-none z-10 border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]'>
         <Icon className='absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black' />
         <Icon className='absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black' />
         <Icon className='absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black' />
@@ -47,7 +47,7 @@ const Cards = ({ position, prize, other, img }) => {
           className='absolute top-4 left-4 '
         />
 
-        <h2 className='dark:text-white mt-4 text-2xl  font-[archiv]'>
+        <h2 className='dark:text-white mt-4 text-2xl font-semibold font-[archiv]'>
           {prize}
         </h2>
         <h2 className='dark:text-white mt-4 text-2xl  font-[archiv]'>

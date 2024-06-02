@@ -45,8 +45,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${toggle ? "overlay" : ""} `}>
-        {toggle ? <SideNav /> : ""}
+      <div className={`overlay ${toggle ? "active" : ""} `}>
+        {toggle ? <SideNav setToggle={setToggle} /> : ""}
       </div>
     </>
   );
