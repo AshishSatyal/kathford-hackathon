@@ -1,14 +1,15 @@
 import React from "react";
 import CountDown from "./CountDown";
 import ButtonWithIcon from "./ButtonWithIcon";
+import { BsArrowRight } from "react-icons/bs";
 
 import discord from "/src/assets/discord.svg";
 
 const Hero = () => {
   return (
-    <div className="h-[50rem] w-full  relative flex items-center justify-center">
+    <div className='h-[50rem] w-full  relative flex items-center justify-center'>
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className='absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
       <div className=' min-h-[100dvh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
         <div className=''>
           <p className='gradient-text text-color-1/100 text-center text-xl md:text-3xl lg:text-6xl font-normal capitalize text-top'>
@@ -29,7 +30,20 @@ const Hero = () => {
           Discord
         </button> */}
         {/* <Button label={ "discord" } /> */}
-        <ButtonWithIcon icon={discord} label={"discord"}/>
+        <div className='flex items-center justify-around w-72'>
+          <ButtonWithIcon icon={discord} label={"discord"} />
+
+          <button className=' w-full relative text-white text-lg'>
+            <a
+              href='https://kathcode.netlify.app/introduction/'
+              target='_blank'
+              className=''
+            >
+              Learn More
+              <BsArrowRight className='absolute top-1.5 right-3  ' />
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
