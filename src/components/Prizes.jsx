@@ -48,19 +48,19 @@ const Prizes = () => {
           <Cards
             img={winner}
             position={"#1 Winner"}
-            prize={"Rs.35000"}
+            prize={"Rs 35000"}
             other={"medals & Certificate"}
           />
           <Cards
             img={second}
             position={"1st runner up"}
-            prize={"Rs.10000"}
+            prize={"Rs 10000"}
             other={"medals & Certificate"}
           />
           <Cards
             img={third}
             position={"2nd runner up"}
-            prize={"Rs.5000"}
+            prize={"Rs 5000"}
             other={"medals & Certificate"}
           />
         </div>
