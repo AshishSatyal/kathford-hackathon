@@ -1,14 +1,40 @@
-<?xml version="1.0" ?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<g id="Flat">
-<g id="Color">
-<polygon fill="#212529" points="45 17 32 25 19 17 19 3 45 3 45 17"/>
-<polygon fill="#dd051d" points="40 3 40 20.08 32 25 24 20.08 24 3 40 3"/>
-<path d="M32,25l6.49-4a21.36,21.36,0,0,0-13,0Z" fill="#a60416"/>
-<circle cx="32" cy="41.5" fill="#fccd1d" r="19.5"/>
-<circle cx="32" cy="41.5" fill="#f9a215" r="14.5"/>
-<path d="M33.88,33.57a6.49,6.49,0,0,0-5.81,1.23,6.41,6.41,0,0,0-2.21,4.89H30c0-2.24,3.37-2.38,4-1,1,2.1-8,7-8,7v4H38v-4H34a7.07,7.07,0,0,0,4-7.54A6.16,6.16,0,0,0,33.88,33.57Z" fill="#fccd1d"/>
-</g>
-</g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 343.15 474.89">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 15.87px;
+      }
+
+      .cls-2 {
+        stroke: url(#linear-gradient-3);
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        stroke: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="4.33" y1="174.11" x2="338.82" y2="174.11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2eb369"/>
+      <stop offset="1" stop-color="#28475b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="43.86" y1="377.74" x2="299.29" y2="377.74" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="100.7" x2="241.07" xlink:href="#linear-gradient"/>
+  </defs>
+  <circle class="cls-1" cx="171.57" cy="174.11" r="159.32"/>
+  <polyline class="cls-3" points="291.35 281.11 291.35 460.1 230.49 422.27 201.05 460.1 171.57 422.27 142.1 460.1 112.66 422.27 51.8 460.1 51.8 281.11"/>
+  <path class="cls-2" d="m110.88,254.08c0-23.9,11.41-45.89,44.54-65.17l16.29-9.5c34.22-19.82,44.26-31.77,44.26-50.78,0-22.54-16.84-34.49-38.83-34.49s-39.92,10.59-56.76,40.46l-13.31-11.68c18.47-32.04,41.28-45.08,68.98-45.08,35.3,0,57.84,18.74,57.84,51.05,0,26.34-21.18,45.62-52.95,63.54l-17.92,10.86c-26.34,14.66-34.22,30.14-34.49,50.78h107.54v16.29h-125.19v-16.29Z"/>
+</svg>

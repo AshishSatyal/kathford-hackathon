@@ -43,8 +43,8 @@ const Cards = ({ position, prize, other, img }) => {
           src={img}
           alt=''
           width={75}
-          height={100}
-          className='absolute top-4 left-4 '
+          // height={}
+          className='absolute top-4 left-4'
         />
 
         <h2 className='dark:text-white mt-4 text-2xl font-semibold font-[archiv]'>
