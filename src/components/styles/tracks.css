@@ -1,27 +1,27 @@
 @import url('./tooltip.css');
 
 .tracks-main {
-    @apply md:flex-col;
+  @apply md:flex-col;
 }
 
 .track-nav {
-    @apply overflow-x-scroll md:overflow-x-visible ;
+  @apply overflow-x-scroll md:overflow-x-visible;
 }
 
 .track-nav-item {
-    @apply bg-color-3/60 px-2 py-4 rounded-md md:p-0 md:w-[60px] md:h-[60px] md:inline-block md:min-w-[60px] md:min-h-[60px] transition-all duration-500 ease-out relative;
+  @apply bg-color-3/60 px-2 py-4 rounded-md md:p-0 md:w-[60px] md:h-[60px] md:inline-block md:min-w-[60px] md:min-h-[60px] transition-all duration-500 ease-out relative;
 }
 
 .track-nav-item .tooltip-text {
-    transform: translateZ(0px) translateX(-50%);
-    width: max-content !important;
-    height: max-content !important;
+  transform: translateZ(0px) translateX(-50%);
+  width: max-content !important;
+  height: max-content !important;
 
-    @apply text-sm top-[-60px] left-[50%] bg-white/10 hidden md:block;
+  @apply text-sm top-[-60px] left-[50%] bg-white/10 hidden md:block;
 }
 .track-nav-item .tooltip-text::after {
-    border-width: 8px !important;
-    border-color: rgba(255, 255, 255, 0.1) transparent transparent transparent !important; 
+  border-width: 8px !important;
+  border-color: rgba(255, 255, 255, 0.1) transparent transparent transparent !important;
 }
 
 /* .track-nav-item:hover,
@@ -31,15 +31,15 @@
 } */
 
 .track-nav-item .track-icon > * {
-    @apply md:w-[44px] md:h-[60px] md:mx-auto;
-} 
+  @apply md:w-[44px] md:h-[60px] md:mx-auto;
+}
 
 .track-nav-item.active {
-    background: linear-gradient(to right, #05bc64, #27445c);
+  background: linear-gradient(to right, #05bc64, #27445c);
 }
 
 .track-nav-item > span {
-    @apply transition-all duration-300 ease-out md:ml-2 md:text-nowrap md:hidden;
+  @apply transition-all duration-300 ease-out md:ml-2 md:text-nowrap md:hidden;
 }
 
 /* .track-nav-item:hover > span {
@@ -56,47 +56,56 @@
 }
 
 .track-details-container > * {
-    @apply md:flex-grow md:w-full;
+  @apply md:flex-grow md:w-full;
 }
 
 .track-details > .track-icon svg {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .track-info {
-    @apply md:basis-3/5 py-2 mt-2 md:mt-4 lg:mt-6;
+  @apply md:basis-3/5 py-2 mt-2 md:mt-4 lg:mt-6;
 }
 
 .track-info ul {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .track-info h4 {
-    @apply text-[18px] md:text-[20px] lg:text-[24px] font-bold leading-6;
+  @apply text-[18px] md:text-[20px] lg:text-[24px] font-bold leading-6;
 }
 
 .track-info li {
-    @apply text-[12px] md:text-[14px] lg:text-[18px] font-thin mt-4 ml-4;
+  @apply text-[12px] md:text-[14px] lg:text-[18px] font-thin mt-4 ml-4;
 }
 
-
 .track-reward {
-    @apply md:basis-2/5;
+  @apply md:basis-2/5;
 }
 
 .track-reward h4 {
-    @apply uppercase text-[10px] font-bold md:text-[12px] lg:text-[16px];
+  @apply uppercase text-[10px] font-bold md:text-[12px] lg:text-[16px];
 }
 
 .track-reward p {
-    @apply text-2xl font-bold md:text-4xl;
+  @apply text-2xl font-bold md:text-4xl;
 }
 
 @keyframes blink {
-    0% {opacity: 0}
-    25% {opacity: 1}
-    50% {opacity: 1}
-    75% {opacity: 0}
-    100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
