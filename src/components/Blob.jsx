@@ -69,8 +69,8 @@ const Blob = () => {
         {`
           #cursor-border {
             background-color:white;
-            height:25rem;
-            width:25rem;
+            height:35rem;
+            width:35rem;
             aspect-ratio:1;
             position:fixed;
             left:50%;

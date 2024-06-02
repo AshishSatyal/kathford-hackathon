@@ -20,7 +20,7 @@ const Header = () => {
   return (
     // --Header-container--
     <>
-      <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 backdrop-blur-xl'>
+      <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 '>
         <div className='flex justify-between items-center xl:px-10'>
           <div>
             <a href='#hero' className='block w-[12rem] xl:mr-8 '>
@@ -35,8 +35,8 @@ const Header = () => {
           </div>
           <Navlinks scrollState={isHidden} />
 
-          <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center'>
-            <Button label={"register now"} />
+          <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out'>
+            {!isHidden && <Button label={"register now"} />}
             <div className={`${isHidden ? "lg:block" : "lg:hidden"} ml-5`}>
               <button onClick={toggleNav}>
                 <img src={hamBurger} alt='HamBurger' width={25} height={25} />
