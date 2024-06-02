@@ -10,7 +10,7 @@ import {
   FaFacebook,
   FaXTwitter,
   FaDiscord,
-  FaLinkedin,
+  FaGithub,
 } from 'react-icons/fa6';
 
 import './styles/footer.css';
