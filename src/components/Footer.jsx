@@ -17,17 +17,21 @@ import './styles/footer.css';
 
 const socialMediaIcons = [
   {
-    url: 'https://www.facebook.com/profile.php?id=61554820927866',
-    icon: <FaInstagram size={16} />,
+    url: 'https://www.instagram.com/kathforditclub/',
+    icon: <FaInstagram size={20} />,
   },
   {
     url: 'https://www.facebook.com/profile.php?id=61554820927866',
-    icon: <FaFacebook size={16} />,
+    icon: <FaFacebook size={20} />
   },
   {
     url: 'https://discord.gg/8JRA8bSEPq',
-    icon: <FaDiscord size={16} />,
+    icon: <FaDiscord size={20} />,
   },
+  {
+    url: 'https://github.com/Kathford-IT-Club-KIC',
+    icon: <FaGithub size={20}/>,
+  }
 ];
 
 const socialMediaLinks = socialMediaIcons.map((item, idx) => (
