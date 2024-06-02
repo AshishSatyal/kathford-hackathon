@@ -36,6 +36,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "ArchivGrotesk", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -78,7 +79,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(178, 175, 175, 0.6); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
   /* opacity: 0.9; */
   /* visibility: hidden; */
   display: none;

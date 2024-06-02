@@ -1,29 +1,33 @@
 import React from "react";
 import Cross from "../assets/cross.svg";
 
-const SideNav = ({ setToggle }) => {
+const SideNav = ({ setToggle, toggleNav }) => {
+  const closeSideBarModal = () => {
+    setToggle(false);
+    document.body.classList.remove("overflow-hidden");
+  }
   return (
-    <div className='fixed m-10 top-0 text-white right-0 w-[40%] h-[85%] bg-black rounded-xl z-30 opacity-100'>
+    <div className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100'>
       <div className='flex flex-col h-[100%] '>
         <div className='flex h-[60%] '>
-          <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start pl-24 font-[monument] text-4xl '>
+          <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start pl-12 lg:pl-16 font-[monument] text-2xl md:text-3xl lg:text-4xl '>
             <li className='nav-list'>
-              <a className='font-semibold' href='#prizes'>
+              <a className='font-semibold' href='#prizes' onClick={closeSideBarModal}>
                 Prizes
               </a>
             </li>
             <li className='nav-list'>
-              <a className=' font-semibold ' href='#schedule'>
+              <a className=' font-semibold ' href='#schedule' onClick={closeSideBarModal}>
                 Schedule
               </a>
             </li>
             <li className='nav-list'>
-              <a className='font-semibold' href='#partner'>
+              <a className='font-semibold' href='#partners' onClick={closeSideBarModal}>
                 Partner
               </a>
             </li>
             <li className='nav-list'>
-              <a className='font-semibold' href='#faq'>
+              <a className='font-semibold' href='#faq' onClick={closeSideBarModal}>
                 FAQs
               </a>
             </li>
@@ -40,7 +44,7 @@ const SideNav = ({ setToggle }) => {
           </div>
         </div>
 
-        <div className='flex p-10  justify-around items-center'>
+        <div className='flex p-10 pl-12 justify-around items-center'>
           <div className='w-1/5'>
             <p className='text-sm'>Connect</p>
           </div>
@@ -51,7 +55,7 @@ const SideNav = ({ setToggle }) => {
             <a href=''>Facebook</a>
           </div>
         </div>
-        <div className='flex p-10  '>
+        <div className='flex p-10 pl-12'>
           <div className='w-1/5'>
             <p className='text-sm font-[archive]'>Register On</p>
           </div>

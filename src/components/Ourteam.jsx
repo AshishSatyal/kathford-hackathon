@@ -14,7 +14,7 @@ const Ourteam = () => {
           once: true,
         }}
         variants={variantNav}
-        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
+        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border border-black/[0.2] dark:border-white/[0.2]'
         key={item.id}
       >
         <div className='team-img' style={{ height: "100%" }}>
