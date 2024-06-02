@@ -13,17 +13,17 @@
 
 .honeycomb-cell
 {
-  @apply flex-grow-0 flex-shrink basis-[250px] max-w-[250px] h-[137.5px] mt-[65.4px] mb-[4px] relative p-[0.5rem] text-center z-10 transition-all duration-300 ease-in-out;
+  @apply flex-grow-0 flex-shrink basis-[125px] max-w-[125px] h-[68.75px] mt-[32.7px] mb-[2px] relative p-[0.25rem] text-center z-10 transition-all duration-300 ease-in-out;
 }
 
 .honeycomb-cell:hover,
 .honeycomb-cell:focus {
   box-shadow: 0px 10px 100px 10px black;
-  transform: translateZ(-80px);
+  transform: translateZ(-40px);
 }
 
 .honeycomb-cell:not(:hover) {
-  transform: translateZ(-100px);
+  transform: translateZ(-50px);
 }
 
 .honeycomb-cell_img
@@ -66,7 +66,7 @@
 }
 .honeycomb_hidden
 {
-  @apply hidden opacity-0 w-[250px] my-0 mx-[12.5px];
+  @apply hidden opacity-0 w-[125px] my-0 mx-[6.25px];
 }
 
 /****** Responsive *******/
@@ -75,18 +75,25 @@
 {
   .honeycomb-cell 
   {
-    margin: 81.25px 25px;
+    margin: 17.25px 0;
+  }
+
+  .honeycomb-cell:nth-child(3n) 
+  {
+    margin-right: calc(50% - 100px);
+    margin-left: calc(25% - 20px);
   }
 }
 
 
 @media (min-width: 550px) and (max-width: 825px) 
 {
-  .honeycomb-cell:nth-child(4n) 
+  .honeycomb-cell:nth-child(12n) 
   {
-    margin-right: calc(50% - 150px);
-    margin-left: calc(25% - 150px);
+    margin-right: calc(50% - 75px);
+    margin-left: calc(25% - 75px);
   }
+
 
   .honeycomb_hidden:nth-child(3n + 5) 
   {
@@ -108,12 +115,12 @@
  
   .honeycomb-cell:nth-child(5n + 4) 
   {
-    margin-left: calc(50% - 275px);
+    margin-left: calc(50% - 137.5px);
   }
 
   .honeycomb-cell:nth-child(5n + 5) 
   {
-    margin-right: calc(50% - 275px);
+    margin-right: calc(50% - 137.5px);
   }
 
   .honeycomb_hidden:nth-child(5n), 
@@ -125,13 +132,13 @@
 @media (min-width: 1100px) 
 {
   .honeycomb-cell:nth-child(7n + 5) {
-    margin-left: calc(50% - 400px);
+    margin-left: calc(50% - 200px);
   }
 
   .honeycomb-cell:nth-child(7n + 7), 
   .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) 
   {
-    margin-right: calc(50% - 400px);
+    margin-right: calc(50% - 200px);
   }
 
   .honeycomb_hidden:nth-child(7n + 7), 

@@ -6,7 +6,7 @@ const CountDown = () => {
   const [timerMinutes, serTimerMinutes] = useState("00");
   const [timerSecods, serTimerSeconds] = useState("00");
 
-  const countDownDate = new Date("june 21 2024 00:00:00").getTime();
+  const countDownDate = new Date("june 28 2024 00:00:00").getTime();
 
   const startTimer = () => {
     const time = countDownDate - Date.now();

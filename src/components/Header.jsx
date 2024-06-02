@@ -6,6 +6,7 @@ import Button from "./Button";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const registration_url = 'https://docs.google.com/forms/d/e/1FAIpQLSduLeNfRW2__b8ClTTUslocDAJ65bkS_oGbyWQ7hdIBMr9e9A/viewform';
 
   function toggleNav() {
     setToggle((prevToggle) => !toggle);
@@ -28,7 +29,7 @@ const Header = () => {
 
 
         <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex'>
-          <Button label={ "register now" } />
+          <Button label={ "register now" } link={registration_url} />
         </div>
         <div className='lg:hidden ml-auto'>
           <button onClick={toggleNav}>

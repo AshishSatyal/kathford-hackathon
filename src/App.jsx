@@ -45,8 +45,8 @@ const App = () => {
           <Faq />
           <Partners />
           <Footer />
-          {isVisible && <div className="text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md flex items-center justify-center rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer">
-            <FaArrowUp size={20} />
+          {isVisible && <div className="text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer">
+            <a href="#" className='w-full h-full flex items-center justify-center'><FaArrowUp size={20} /></a>
           </div> }
         </div>
       </div>
