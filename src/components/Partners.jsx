@@ -36,7 +36,7 @@ const Partners = () => {
     <CenterComponent>
         <section id="partners">
             <div className="faq-header text-center my-2">
-            <h1 className='text-color-1/100 uppercase text-5xl font-normal'>Partners</h1>
+            <h1 className='title uppercase text-5xl font-semibold'>Partners</h1>
             </div>
             <ul className="honeycomb">
                 { cells }

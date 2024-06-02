@@ -42,8 +42,8 @@ const Ourteam = () => {
   return (
     <CenterComponent>
       <div className='min-h[85vh][x] flex flex-col justify-around'>
-        <div className='my-5'>
-          <p className='text-white text-4xl text-center'>Our Team</p>
+        <div className='my-5 text-center'>
+          <p className='title text-3xl lg:text-5xl capitalize font-semibold p-10'>Our Team</p>
         </div>
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-around items-center'>

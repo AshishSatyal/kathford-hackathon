@@ -12,7 +12,7 @@ const Prizes = () => {
     <CenterComponent>
       <div id='prizes' className=' py-5 lg:px-10'>
         <div className='my-2 text-center '>
-          <p className='text-color-1 uppercase text-2xl lg:text-5xl font-semibold'>
+          <p className='title uppercase text-2xl lg:text-5xl font-semibold'>
             prizes
           </p>
         </div>

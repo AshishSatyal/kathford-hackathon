@@ -56,7 +56,7 @@ const Tracks = () => {
     <CenterComponent>
         <section className='py-4 px-4 '>
         <div className="faq-header text-center my-2">
-          <h1 className='text-color-1/100 uppercase text-5xl font-normal'>Tracks</h1>
+          <h1 className='title text-3xl lg:text-5xl capitalize font-semibold p-10'>Tracks</h1>
         </div>
         <div className="tracks-main">
           <div className="body-nav track-nav">

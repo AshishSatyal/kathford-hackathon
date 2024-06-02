@@ -23,7 +23,7 @@ const Timeline = () => {
               contentStyle={style}
               dateClassName='date  font-[monument] uppercase text-white/80'
             >
-              <div className=' text-white/80  flex items-align justify-between font-[archive] text-2xl  font-semibold '>
+              <div className=' text-white/80  flex items-center justify-between font-[archive] text-2xl  font-semibold '>
                 <h3 className='vertical-timeline-element-title '>
                   {element.title}
                 </h3>
