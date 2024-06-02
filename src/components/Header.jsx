@@ -2,15 +2,21 @@ import React, { useState } from "react";
 import kathCode from "/src/assets/kathCode.png";
 import hamBurger from "/src/assets/hamBurger.svg";
 import Navlinks from "./Navlinks";
+import useScrollPosition from "../hook/useScrollPosition";
+import SideNav from "./SideNav";
 import Button from "./Button";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const registration_url = 'https://docs.google.com/forms/d/e/1FAIpQLSduLeNfRW2__b8ClTTUslocDAJ65bkS_oGbyWQ7hdIBMr9e9A/viewform';
+  const scrollValue = useScrollPosition();
+  const body = document.body;
+
+  const isHidden = scrollValue > 50;
 
   function toggleNav() {
-    setToggle((prevToggle) => !toggle);
-    console.log(toggle ? "unclick" : "click");
+    setToggle((prevToggle) => !prevToggle);
+    document.body.classList.add("overflow-hidden");
   }
   return (
     // --Header-container--

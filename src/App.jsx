@@ -31,11 +31,11 @@ const App = () => {
 
   return (
     <>
-      <div className="relative">
-        <div className="cursor-pointer absolute z-0">
+      <div className='relative'>
+        <div className='cursor-pointer absolute z-0'>
           <Blob />
         </div>
-        <div className="body-section relative z-10">
+        <div className='body-section relative z-10'>
           <Header />
           <Hero />
           <Prizes />
