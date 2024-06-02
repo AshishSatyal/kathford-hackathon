@@ -77,7 +77,7 @@ export function CardPattern({ mouseX, mouseY, randomString }) {
 }
 
 // const characters = "Kathcode HAckathon";
-const words = ["KathCode", "KathHack", "code", "Hackathon", "sustainability"];
+const words = ["KathCode", "KathHack", "Code", "Hackathon", "Sustainability", "Creativity"];
 export const generateRandomString = (length) => {
   let result = "";
   for (let i = 0; i < length; i++) {

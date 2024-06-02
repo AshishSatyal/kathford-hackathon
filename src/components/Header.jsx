@@ -33,11 +33,11 @@ const Header = () => {
               />
             </a>
           </div>
-          <Navlinks scrollState={isHidden} />
+          {/* <Navlinks scrollState={isHidden} /> */}
 
-          <div className='hidden top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out'>
+          <div className='top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out'>
             {!isHidden && <Button label={"register now"} />}
-            <div className={`${isHidden ? "lg:block" : "lg:hidden"} ml-5`}>
+            <div className={`block ml-5`}>
               <button onClick={toggleNav}>
                 <img src={hamBurger} alt='HamBurger' width={25} height={25} />
               </button>
