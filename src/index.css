@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,21 +14,21 @@
 }
 
 @font-face {
-  font-family: "Archiv";
-  src: url("./assets/fonts/ArchivGroteskTrial-RegularTrial.otf")
-    format("opentype");
+  font-family: 'Archiv';
+  src: url('./assets/fonts/ArchivGroteskTrial-RegularTrial.otf')
+    format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "whites";
-  src: url("./assets/fonts/WhyteInktrap-Regular.ttf") format("opentype");
+  font-family: 'whites';
+  src: url('./assets/fonts/WhyteInktrap-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "monument";
-  src: url("./assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+  font-family: 'monument';
+  src: url('./assets/fonts/MonumentExtended-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,20 +44,22 @@ body {
 }
 
 .register-btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .hero-text {
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: white;
   letter-spacing: 6px;
-  font-family: "monument";
+  font-family: 'monument';
 }
 .text-top {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white; */
   letter-spacing: 2px;
-  font-family: "Archiv";
+  font-family: 'Archiv';
   font-size: 24px;
   font-weight: 700;
 }
@@ -95,4 +97,40 @@ body {
 
 .discord-btn:hover .discord-icon {
   filter: grayscale(0%);
+}
+
+/* scrollbar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  cursor: grab;
+  background: linear-gradient(
+    180deg,
+    #000000,
+    #03341c,
+    #055e33,
+    #048c4a,
+    #05bc64,
+    #38658a,
+    #27445c,
+    #3c536c,
+    #222020,
+    #000000
+  );
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #05bc64,
+    #27445c,
+    #3c536c,
+    #222020,
+    #000000
+  );
 }
