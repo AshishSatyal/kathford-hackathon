@@ -1,37 +1,38 @@
-import React from 'react'
+import React from 'react';
 
 import { variantNav } from '../utils/variants';
 
 import { motion } from 'framer-motion';
 
 const TrackCard = (props) => {
-    const {icon, data} = props;
+  const { icon, data } = props;
   return (
-    <motion.div 
+    <motion.div
       key={data?.id}
-      initial='offscreen'
-      whileInView='onscreen'
+      initial="offscreen"
+      whileInView="onscreen"
       variants={variantNav}
-      className="track-details-container"
+      className="track-details-container "
       viewport={{
         once: true,
       }}
     >
-        <div className="track-details">
-            <div className='track-icon'>
-                { icon }
-            </div>
-            <div className="track-info">
-            <h4>{ data?.title }</h4>
-            <p className='flex items-center gap-2 pt-2 '><span className='size-[5px] bg-white '></span>{ data?.description }</p>
-            </div>
+      <div className="track-details">
+        <div className="track-icon">{icon}</div>
+        <div className="track-info">
+          <h4>{data?.title}</h4>
+          <p className="flex items-center gap-2 pt-2 ">
+            <span className="size-[5px] bg-white "></span>
+            {data?.description}
+          </p>
         </div>
-        {/* <div className="track-reward">
+      </div>
+      {/* <div className="track-reward">
           <h4>winner gets</h4>
           <p>{ formatCurrency(data?.reward) }</p>
         </div> */}
     </motion.div>
-  )
-}
+  );
+};
 
-export default TrackCard
+export default TrackCard;
