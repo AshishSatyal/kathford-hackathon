@@ -21,6 +21,8 @@ const Timeline = () => {
               lineColor={"#000"}
               contentArrowStyle={style}
               contentStyle={style}
+              icon={element.icon}
+              iconStyle={{ color: "white", background: "rgba(0,0,0,2)" }}
               dateClassName='date  font-[monument] uppercase text-white/80'
             >
               <div className=' text-white/80  flex items-align justify-between font-[archive] text-2xl  font-semibold '>

@@ -1,3 +1,14 @@
+import { FaRegCheckCircle } from "react-icons/fa";
+import { GiInauguration } from "react-icons/gi";
+import { FaHourglassStart } from "react-icons/fa";
+import { MdOutlineLunchDining } from "react-icons/md";
+import { BiCookie } from "react-icons/bi";
+import { LiaUtensilsSolid } from "react-icons/lia";
+import { MdOutlineFreeBreakfast } from "react-icons/md";
+import { RiPresentationFill } from "react-icons/ri";
+import { GoTrophy } from "react-icons/go";
+import { FaHourglassEnd } from "react-icons/fa";
+
 let timelineElements = [
   {
     id: 1,
@@ -8,7 +19,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "7:00 AM",
-    // icon: "work",
+    icon: <FaRegCheckCircle />,
   },
   {
     id: 2,
@@ -19,7 +30,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "8:00 AM",
-    // icon: "work",
+    icon: <GiInauguration />,
   },
   {
     id: 3,
@@ -30,7 +41,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "9:00 AM",
-    // icon: "work",
+    icon: <MdOutlineLunchDining />,
   },
   {
     id: 4,
@@ -41,7 +52,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "10:00 AM",
-    // icon: "work",
+    icon: <FaHourglassStart />,
   },
   {
     id: 5,
@@ -52,7 +63,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "2:30 PM",
-    // icon: "work",
+    icon: <BiCookie />,
   },
   {
     id: 6,
@@ -63,7 +74,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 28",
     time: "7:30 PM",
-    // icon: "work",
+    icon: <LiaUtensilsSolid />,
   },
   {
     id: 7,
@@ -74,7 +85,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 29",
     time: "7:00 AM",
-    // icon: "work",
+    icon: <MdOutlineFreeBreakfast />,
   },
   {
     id: 8,
@@ -85,7 +96,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 29",
     time: "10:00 AM",
-    // icon: "work",
+    icon: <MdOutlineLunchDining />,
   },
   {
     id: 9,
@@ -96,7 +107,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 29",
     time: "12:00 PM",
-    // icon: "work",
+    icon: <RiPresentationFill />,
   },
   {
     id: 10,
@@ -107,7 +118,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 29",
     time: "5:00 PM",
-    // icon: "work",
+    icon: <GoTrophy />,
   },
   {
     id: 11,
@@ -118,7 +129,7 @@ let timelineElements = [
     // buttonText: "View Frontend Projects",
     date: "june 29",
     time: "6:00 PM",
-    // icon: "work",
+    icon: <FaHourglassEnd />,
   },
 ];
 
