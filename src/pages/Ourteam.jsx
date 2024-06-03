@@ -30,7 +30,7 @@ const Ourteam = () => {
 
   return (
     <CenterComponent>
-      <div className=' flex flex-col justify-around'>
+      <div className=' flex flex-col justify-around mt-10'>
         <div className='my-5'>
           <p className='text-white text-4xl text-center'>Our Team</p>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Cross from "../assets/cross.svg";
+import { Link } from "react-router-dom";
 
 const SideNav = ({ setToggle }) => {
   return (
@@ -21,6 +22,11 @@ const SideNav = ({ setToggle }) => {
               <a className='font-semibold' href='#partner'>
                 Partner
               </a>
+            </li>
+            <li className='nav-list'>
+              <Link className='font-semibold text-white' to='/our-team'>
+                Our Team
+              </Link>
             </li>
             <li className='nav-list'>
               <a className='font-semibold' href='#faq'>
