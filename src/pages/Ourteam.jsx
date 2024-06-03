@@ -1,0 +1,46 @@
+import React from "react";
+import Teams from "../utils/team";
+import CenterComponent from "../components/CenterComponent";
+import { motion } from "framer-motion";
+import { variantNav } from "../utils/variants";
+
+const Ourteam = () => {
+  const team = Teams.map((item) => {
+    return (
+      <motion.div
+        initial='offscreen'
+        whileInView={"onscreen"}
+        viewport={{
+          once: true,
+        }}
+        variants={variantNav}
+        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
+        key={item.id}
+      >
+        <div className='team-img' style={{ height: "100%" }}>
+          <img className='rounded-xl' src={item.image.human} />
+        </div>
+        <div className='text-center mt-10'>
+          <p className='text-2xl text-color-1'>{item.name}</p>
+          <p className='p-2 text-white text-xl'>{item.position}</p>
+        </div>
+      </motion.div>
+    );
+  });
+
+  return (
+    <CenterComponent>
+      <div className=' flex flex-col justify-around'>
+        <div className='my-5'>
+          <p className='text-white text-4xl text-center'>Our Team</p>
+        </div>
+
+        <div className='flex flex-col lg:flex-row flex-wrap justify-around items-center'>
+          {team}
+        </div>
+      </div>
+    </CenterComponent>
+  );
+};
+
+export default Ourteam;

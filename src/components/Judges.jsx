@@ -1,11 +1,11 @@
 import React from "react";
-import Teams from "../utils/team";
+import judges from "../utils/judges";
 import CenterComponent from "./CenterComponent";
 import { motion } from "framer-motion";
 import { variantNav } from "../utils/variants";
 
-const Ourteam = () => {
-  const team = Teams.map((item) => {
+const Judges = () => {
+  const judge = judges.map((item) => {
     return (
       <motion.div
         initial='offscreen'
@@ -14,7 +14,7 @@ const Ourteam = () => {
           once: true,
         }}
         variants={variantNav}
-        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border'
+        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border border-white/80'
         key={item.id}
       >
         <div className='team-img' style={{ height: "100%" }}>
@@ -26,32 +26,21 @@ const Ourteam = () => {
         </div>
       </motion.div>
     );
-    // return (
-    //   <div className='border relative w-[22%] '>
-    //     <div className='team-img' style={{ height: "100%", background: "red" }}>
-    //       <img src={item.image.human} width={"100%"} height='200px' />
-    //     </div>
-    //     <div className='p-2 text-white text-center absolute bottom-0 left-0'>
-    //       <p className='text-2xl'>{item.name}</p>
-    //       <p>{item.position}</p>
-    //     </div>
-    //   </div>
-    // );
   });
 
   return (
     <CenterComponent>
-      <div className='min-h[85vh][x] flex flex-col justify-around'>
+      <div className=' flex flex-col justify-around my-5'>
         <div className='my-5'>
-          <p className='text-white text-4xl text-center'>Our Team</p>
+          <p className='text-color-1 text-4xl text-center uppercase '>Judges</p>
         </div>
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-around items-center'>
-          {team}
+          {judge}
         </div>
       </div>
     </CenterComponent>
   );
 };
 
-export default Ourteam;
+export default Judges;

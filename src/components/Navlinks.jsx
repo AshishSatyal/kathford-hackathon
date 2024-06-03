@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navlinks = ({ scrollState }) => {
   return (
@@ -31,6 +32,14 @@ const Navlinks = ({ scrollState }) => {
             >
               Partner
             </a>
+          </li>
+          <li>
+            <Link
+              className='font-semibold leading-normal text-lg text-white'
+              to='/our-team'
+            >
+              Our Team
+            </Link>
           </li>
           <li>
             <a

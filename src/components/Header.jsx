@@ -5,6 +5,7 @@ import Navlinks from "./Navlinks";
 import useScrollPosition from "../hook/useScrollPosition";
 import SideNav from "./SideNav";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -23,7 +24,7 @@ const Header = () => {
       <div className='sticky top-0 px-[2.5rem] py-4 min-w-full text-white z-10 '>
         <div className='flex justify-between items-center xl:px-10'>
           <div>
-            <a href='#hero' className='block w-[12rem] xl:mr-8 '>
+            <Link to='/' className='block w-[12rem] xl:mr-8 '>
               <img
                 className=' w-[100px] h-[40px] sm:w-[auto] sm:h-[auto]'
                 src={kathCode}
@@ -31,7 +32,7 @@ const Header = () => {
                 width={200}
                 height={40}
               />
-            </a>
+            </Link>
           </div>
           <Navlinks scrollState={isHidden} />
 
