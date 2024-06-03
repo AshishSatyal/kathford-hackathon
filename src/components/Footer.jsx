@@ -36,7 +36,7 @@ const socialMediaIcons = [
 
 const socialMediaLinks = socialMediaIcons.map((item, idx) => (
   <li key={idx}>
-    <a href={item.url}>{item.icon}</a>
+    <a target='_blank' href={item.url}>{item.icon}</a>
   </li>
 ));
 

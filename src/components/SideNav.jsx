@@ -49,18 +49,18 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <p className='text-sm'>Connect</p>
           </div>
           <div className='w-4/5 flex flex-col  text-sm'>
-            <a className='pb-4' href=''>
+            <a className='pb-4' target="_blank" href='https://www.instagram.com/kathforditclub/'>
               Instagram
             </a>
-            <a href=''>Facebook</a>
+            <a href='https://www.facebook.com/profile.php?id=61554820927866' target='_blank'>Facebook</a>
           </div>
         </div>
         <div className='flex p-10 pl-12'>
           <div className='w-1/5'>
-            <p className='text-sm font-[archive]'>Register On</p>
+            <p className='text-sm '>Register On</p>
           </div>
           <div className='w-4/5 flex flex-col'>
-            <a href='https://forms.gle/NpdpPh6oXmSSmRVf8' target='_blank'>
+            <a target='_blank' href='https://forms.gle/NpdpPh6oXmSSmRVf8'>
               Google Form
             </a>
           </div>
