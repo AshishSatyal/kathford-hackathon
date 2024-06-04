@@ -28,8 +28,6 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
-      window.removeEventListener('scroll', toggleVisibility);
-    };
   }, []);
 
   return (
@@ -55,16 +53,6 @@ const App = () => {
               <a
                 href='#'
                 className='w-full h-full flex items-center justify-center'
-              >
-                <FaArrowUp size={20} />
-              </a>
-            </div>
-          )}
-          {isVisible && (
-            <div className="text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer">
-              <a
-                href="#"
-                className="w-full h-full flex items-center justify-center"
               >
                 <FaArrowUp size={20} />
               </a>
