@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navlinks = ({ scrollState }) => {
   return (
@@ -31,6 +32,17 @@ const Navlinks = ({ scrollState }) => {
             >
               Partner
             </a>
+          </li>
+          <li>
+            <NavLink
+              className={`${({ isActive }) =>
+                isActive
+                  ? "underline"
+                  : ""} font-semibold leading-normal text-lg text-white`}
+              to='/our-team'
+            >
+              Our Team
+            </NavLink>
           </li>
           <li>
             <a

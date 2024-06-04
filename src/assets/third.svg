@@ -1,14 +1,37 @@
-<?xml version="1.0" ?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<g id="Flat">
-<g id="Color">
-<polygon fill="#212529" points="45 17 32 25 19 17 19 3 45 3 45 17"/>
-<polygon fill="#dd051d" points="40 3 40 20.08 32 25 24 20.08 24 3 40 3"/>
-<path d="M32,25l6.49-4a21.36,21.36,0,0,0-13,0Z" fill="#a60416"/>
-<circle cx="32" cy="41.5" fill="#fccd1d" r="19.5"/>
-<circle cx="32" cy="41.5" fill="#f9a215" r="14.5"/>
-<path d="M36.54,41.5A4.52,4.52,0,0,0,38.38,38c0-2.76-2.86-5-6.38-5s-6.37,2.24-6.37,5h3.92a2,2,0,0,1,3.9-.29c.17,1.23-.77,2.73-2,2.73v2.12c2.22,0,2.84,3.5.72,4.32A2,2,0,0,1,29.55,45H25.63c0,2.76,2.85,5,6.37,5s6.38-2.24,6.38-5A4.52,4.52,0,0,0,36.54,41.5Z" fill="#fccd1d"/>
-</g>
-</g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 343.15 474.89">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#linear-gradient-3);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 15.87px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: url(#linear-gradient);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: url(#linear-gradient-2);
+        stroke-width: 9.98px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="3.33" y1="173.11" x2="337.82" y2="173.11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2eb369"/>
+      <stop offset="1" stop-color="#28475b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="96.67" y1="173.11" x2="243.12" y2="173.11" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="42.86" y1="376.74" x2="298.29" y2="376.74" xlink:href="#linear-gradient"/>
+  </defs>
+  <circle class="cls-2" cx="170.57" cy="173.11" r="159.32"/>
+  <path class="cls-3" d="m103.02,225.51l12.17-10.68c10.43,16.64,30.3,31.54,54.39,31.54,31.29,0,52.41-19.12,52.41-45.95,0-25.08-19.87-39.74-46.69-39.99-10.93,0-19.87,1.99-26.08,4.72v-13.41l58.61-46.94v-3.48h-88.92v-16.39h111.52v20.86l-52.9,41.48c35.76-.75,60.6,22.1,60.6,53.65,0,35.27-28.07,60.35-68.55,60.35-27.82,0-54.64-14.9-66.56-35.77Z"/>
+  <polyline class="cls-1" points="290.35 280.11 290.35 459.1 229.49 421.27 200.05 459.1 170.57 421.27 141.1 459.1 111.66 421.27 50.8 459.1 50.8 280.11"/>
+</svg>

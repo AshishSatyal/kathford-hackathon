@@ -1,33 +1,60 @@
 import React from "react";
 import Cross from "../assets/cross.svg";
+import { Link } from "react-router-dom";
 
 const SideNav = ({ setToggle, toggleNav }) => {
   const closeSideBarModal = () => {
     setToggle(false);
     document.body.classList.remove("overflow-hidden");
-  }
+  };
   return (
     <div className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100'>
       <div className='flex flex-col h-[100%] '>
         <div className='flex h-[60%] '>
           <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start pl-12 lg:pl-16 font-[monument] text-2xl md:text-3xl lg:text-4xl '>
             <li className='nav-list'>
-              <a className='font-semibold' href='#prizes' onClick={closeSideBarModal}>
+              <a
+                className='font-semibold'
+                href='#prizes'
+                onClick={closeSideBarModal}
+              >
                 Prizes
               </a>
             </li>
             <li className='nav-list'>
-              <a className=' font-semibold ' href='#schedule' onClick={closeSideBarModal}>
+              <a
+                className=' font-semibold '
+                href='#schedule'
+                onClick={closeSideBarModal}
+              >
                 Schedule
               </a>
             </li>
             <li className='nav-list'>
-              <a className='font-semibold' href='#partners' onClick={closeSideBarModal}>
+              <a
+                className='font-semibold'
+                href='#partners'
+                onClick={closeSideBarModal}
+              >
                 Partner
               </a>
             </li>
             <li className='nav-list'>
-              <a className='font-semibold' href='#faq' onClick={closeSideBarModal}>
+              <Link className='font-semibold text-white' to='/our-team'>
+                Our Team
+              </Link>
+            </li>
+            <li className='nav-list'>
+              <Link className='font-semibold text-white' to='/our-team'>
+                Our Team
+              </Link>
+            </li>
+            <li className='nav-list'>
+              <a
+                className='font-semibold'
+                href='#faq'
+                onClick={closeSideBarModal}
+              >
                 FAQs
               </a>
             </li>
@@ -49,10 +76,19 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <p className='text-sm'>Connect</p>
           </div>
           <div className='w-4/5 flex flex-col  text-sm'>
-            <a className='pb-4' target="_blank" href='https://www.instagram.com/kathforditclub/'>
+            <a
+              className='pb-4'
+              target='_blank'
+              href='https://www.instagram.com/kathforditclub/'
+            >
               Instagram
             </a>
-            <a href='https://www.facebook.com/profile.php?id=61554820927866' target='_blank'>Facebook</a>
+            <a
+              href='https://www.facebook.com/profile.php?id=61554820927866'
+              target='_blank'
+            >
+              Facebook
+            </a>
           </div>
         </div>
         <div className='flex p-10 pl-12'>
