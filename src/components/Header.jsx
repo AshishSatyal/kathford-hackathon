@@ -31,11 +31,11 @@ const Header = () => {
                 src={kathCodeLogo}
                 alt='logo'
               />}
-              {isHidden && <img
-                className=' w-[auto] h-[40px]'
+              <img
+                className={`w-[auto] h-[40px] ${!isHidden ? 'lg:hidden' : ''}`}
                 src={kathCodeLogoSmall}
                 alt='logo'
-              />}
+              />
             </Link>
           </div>
           {/* <Navlinks scrollState={isHidden} /> */}
@@ -43,6 +43,7 @@ const Header = () => {
           <div className='top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out lg:h-4'>
             {!isHidden && (
               <Button
+                className={'hidden lg:inline-flex'}
                 label={"register now"}
                 link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
               />

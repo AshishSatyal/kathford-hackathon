@@ -1,5 +1,6 @@
 import React from "react";
 import CountDown from "./CountDown";
+import Button from "./Button";
 import ButtonWithIcon from "./ButtonWithIcon";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -30,6 +31,13 @@ const Hero = () => {
           Discord
         </button> */}
         {/* <Button label={ "discord" } /> */}
+        {(
+              <Button
+                className={'inline-flex'}
+                label={"register now"}
+                link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
+              />
+            )}
         <div className='flex items-center justify-around w-72 mt-8'>
           <ButtonWithIcon icon={discord} label={"discord"} />
 
