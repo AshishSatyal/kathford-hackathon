@@ -29,7 +29,7 @@ const Partners = () => {
           </h1>
         </div>
         <ul className='honeycomb'>
-          {cells}
+          {cell}
           <li className='honeycomb-cell honeycomb_hidden'></li>
         </ul>
       </section>

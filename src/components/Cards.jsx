@@ -42,7 +42,7 @@ const Cards = ({ position, prize, other, img }) => {
         <img
           src={img}
           alt=''
-          width={75}
+          width={60}
           // height={}
           className='absolute top-4 left-4'
         />

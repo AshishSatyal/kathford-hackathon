@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import kathCode from "/src/assets/kathCode.png";
+import kathCodeLogo from "/src/assets/kathCode.png";
+import kathCodeLogoSmall from "/src/assets/kathcode_logo_small.png";
 import hamBurger from "/src/assets/hamBurger.svg";
 import Navlinks from "./Navlinks";
 import useScrollPosition from "../hook/useScrollPosition";
@@ -25,18 +26,21 @@ const Header = () => {
         <div className='flex justify-between items-center xl:px-10'>
           <div>
             <Link to='/' className='block w-[12rem] xl:mr-8 '>
-              <img
-                className=' w-[100px] h-[40px] sm:w-[auto] sm:h-[auto]'
-                src={kathCode}
+              {!isHidden && <img
+                className=' w-[100px] h-[40px] sm:w-[auto] sm:h-[auto] hidden lg:block'
+                src={kathCodeLogo}
                 alt='logo'
-                width={200}
-                height={40}
-              />
+              />}
+              {isHidden && <img
+                className=' w-[auto] h-[40px]'
+                src={kathCodeLogoSmall}
+                alt='logo'
+              />}
             </Link>
           </div>
           {/* <Navlinks scrollState={isHidden} /> */}
 
-          <div className='top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out h-4'>
+          <div className='top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out lg:h-4'>
             {!isHidden && (
               <Button
                 label={"register now"}
