@@ -40,9 +40,11 @@ const Partners = () => {
             Partners
           </h1>
         </div>
-        {/* <ul className='honeycomb'>
+        <ul className='honeycomb'>
+          {cell}
           <li className='honeycomb-cell honeycomb_hidden'></li>
-        </ul> */}
+        </ul>{" "}
+        */}
         {cell}
       </section>
     </CenterComponent>

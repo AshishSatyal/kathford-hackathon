@@ -1,5 +1,6 @@
 import React from "react";
 import CountDown from "./CountDown";
+import Button from "./Button";
 import ButtonWithIcon from "./ButtonWithIcon";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -7,7 +8,7 @@ import discord from "/src/assets/discord.svg";
 
 const Hero = () => {
   return (
-    <div className='h-[50rem] w-full  relative flex items-center justify-center'>
+    <div className='w-full  relative flex items-center justify-center py-10 md:px-10'>
       {/* Radial gradient for the container to give a faded look */}
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
       <div className=' min-h-[100dvh] px-10 lg:px-[5rem] flex flex-col justify-center items-center'>
@@ -30,7 +31,14 @@ const Hero = () => {
           Discord
         </button> */}
         {/* <Button label={ "discord" } /> */}
-        <div className='flex items-center justify-around w-72'>
+        {(
+              <Button
+                className={'inline-flex'}
+                label={"register now"}
+                link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
+              />
+            )}
+        <div className='flex items-center justify-around w-72 mt-8'>
           <ButtonWithIcon icon={discord} label={"discord"} />
 
           <button className=' w-full relative text-white text-lg'>
