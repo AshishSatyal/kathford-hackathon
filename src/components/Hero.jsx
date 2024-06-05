@@ -32,7 +32,7 @@ const Hero = ({ isVisible }) => {
         </button> */}
         {/* <Button label={ "discord" } /> */}
         <Button
-          className={`inline-flex ${isVisible ? 'lg:opacity-0' : 'opacity-1'}`}
+          className={`inline-flex ${isVisible ? 'lg:opacity-0 invisible' : ''}`}
           label={"register now"}
           link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
         />

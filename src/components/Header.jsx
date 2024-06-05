@@ -37,7 +37,7 @@ const Header = ({ isHidden }) => {
           <div className='top-[5rem] bottom-0 left-0 right-0 lg:static lg:flex items-center transition-all duration-75 ease-out lg:h-4'>
             {/* {!isHidden && ( */}
             <Button
-              className={`hidden lg:inline-flex ${!isHidden ? '' : 'lg:opacity-0'}`}
+              className={`hidden lg:inline-flex ${!isHidden ? '' : 'lg:opacity-0 invisible'}`}
               label={"register now"}
               link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
             />

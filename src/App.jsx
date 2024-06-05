@@ -40,7 +40,7 @@ const App = () => {
           <Faq />
           <Partners />
           <Footer />
-          <div className={`text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer transition-all duration-300 ease-in-out ${!isHidden ? 'opacity-0' : 'opacity-1'}`}>
+          <div className={`text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer transition-all duration-300 ease-in-out ${!isHidden ? 'opacity-0 invisible' : ''}`}>
             <a
               href='#'
               className='w-full h-full flex items-center justify-center'
