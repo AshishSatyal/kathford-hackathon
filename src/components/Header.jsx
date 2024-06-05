@@ -16,12 +16,12 @@ const Header = ({ isHidden }) => {
   return (
     // --Header-container--
     <>
-      <div className='sticky top-0 px-[2.5rem] py-4 h-20 min-w-full text-white z-10 '>
+      <div className='sticky top-0 px-4 py-4 h-20 min-w-full text-white z-10 '>
         <div className='flex justify-between items-center xl:px-10'>
           <div>
             <Link to='/' className='block w-[12rem] xl:mr-8 '>
               <img
-                className={` w-[100px] h-[40px] sm:w-[auto] sm:h-[auto] hidden lg:block transition-all duration-300 ease-in-out ${isHidden ? 'lg:opacity-0 lg:hidden' : ''}`}
+                className={` w-[auto] h-[40px] hidden lg:block transition-all duration-300 ease-in-out ${isHidden ? 'lg:opacity-0 lg:hidden' : ''}`}
                 src={kathCodeLogo}
                 alt='logo'
               />

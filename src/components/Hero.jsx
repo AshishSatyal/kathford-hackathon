@@ -27,10 +27,6 @@ const Hero = ({ isVisible }) => {
         <div className='my-8'>
           <CountDown />
         </div>
-        {/* <button className=' register m-2 p-4 text-white rounded-lg bg-color-3 capitalize hover:bg-color-2 font-mono text-lg font-bold'>
-          Discord
-        </button> */}
-        {/* <Button label={ "discord" } /> */}
         <Button
           className={`inline-flex ${isVisible ? 'lg:opacity-0 invisible' : ''}`}
           label={"register now"}
