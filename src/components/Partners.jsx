@@ -44,7 +44,6 @@ const Partners = () => {
           {cell}
           <li className='honeycomb-cell honeycomb_hidden'></li>
         </ul>{" "}
-        */}
         {cell}
       </section>
     </CenterComponent>
