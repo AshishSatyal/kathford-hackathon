@@ -22,7 +22,7 @@ const TrackCard = (props) => {
         <div className="track-info">
           <h4>{data?.title}</h4>
           <p className="flex items-center gap-2 pt-2 ">
-            <span className="size-[5px] bg-white "></span>
+            <span className="min-w-[5px] min-h-[5px] bg-white "></span>
             {data?.description}
           </p>
         </div>

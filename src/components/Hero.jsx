@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 import discord from "/src/assets/discord.svg";
 
-const Hero = () => {
+const Hero = ({ isVisible }) => {
   return (
     <div className='w-full  relative flex items-center justify-center py-10 md:px-10'>
       {/* Radial gradient for the container to give a faded look */}
@@ -24,20 +24,21 @@ const Hero = () => {
             challenges you to turn your idea into solutions.
           </p>
         </div>
-        <div className='my-4'>
+        <div className='my-8'>
           <CountDown />
         </div>
         {/* <button className=' register m-2 p-4 text-white rounded-lg bg-color-3 capitalize hover:bg-color-2 font-mono text-lg font-bold'>
           Discord
         </button> */}
         {/* <Button label={ "discord" } /> */}
-        {(
-              <Button
-                className={'inline-flex'}
-                label={"register now"}
-                link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
-              />
-            )}
+        <Button
+          className={`inline-flex ${isVisible ? 'lg:opacity-0' : 'opacity-1'}`}
+          label={"register now"}
+          link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
+        />
+
+        {/* placeholder div */}
+        {/* <div className={`h-12 ${isVisible ? 'lg:hidden' : ''}`}></div> */}
         <div className='flex items-center justify-around w-72 mt-8'>
           <ButtonWithIcon icon={discord} label={"discord"} />
 

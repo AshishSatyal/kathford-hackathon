@@ -9,7 +9,6 @@ import partners from "../utils/partners";
 // import axios from "axios";
 
 const Partners = () => {
-  console.log(partners);
   const cell = partners.map((item) => {
     return (
       <div className='flex flex-col items-center text-white'>
