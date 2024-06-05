@@ -40,10 +40,10 @@ export const EvervaultCard = ({ text, className }) => {
           mouseY={mouseY}
           randomString={randomString}
         />
-        <div className='relative z-10 flex items-center justify-center'>
+        <div className='relative z-10 flex items-center justify-center '>
           <div className='relative h-52 w-52  rounded-full flex items-center justify-center text-white font-bold text-4xl'>
             <div className='absolute w-full h-full bg-white/[0.8] dark:bg-black/[0.8] blur-sm rounded-full border-2 ' />
-            <span className='dark:text-white text-black z-10 text-center text-2xl p-20 capitalize font-[monument] tracking-widest'>
+            <span className='dark:text-white text-black z-10 text-center text-2xl sm:p-5 lg:p-20 capitalize font-[monument] tracking-widest'>
               {text}
             </span>
           </div>
@@ -77,7 +77,14 @@ export function CardPattern({ mouseX, mouseY, randomString }) {
 }
 
 // const characters = "Kathcode HAckathon";
-const words = ["KathCode", "KathHack", "Code", "Hackathon", "Sustainability", "Creativity"];
+const words = [
+  "KathCode",
+  "KathHack",
+  "Code",
+  "Hackathon",
+  "Sustainability",
+  "Creativity",
+];
 export const generateRandomString = (length) => {
   let result = "";
   for (let i = 0; i < length; i++) {

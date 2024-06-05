@@ -21,7 +21,7 @@ const Mentors = () => {
           <img className='rounded-xl' src={item.image.human} />
         </div>
         <div className='text-center mt-10'>
-          <p className='text-2xl text-color-1'>{item.name}</p>
+          <p className='text-2xl text-color-1 font-bold'>{item.name}</p>
           <p className='p-2 text-white text-xl'>{item.position}</p>
         </div>
       </motion.div>
@@ -31,8 +31,8 @@ const Mentors = () => {
   return (
     <CenterComponent>
       <div className=' flex flex-col justify-around '>
-        <div className='my-5'>
-          <p className='text-color-1 text-4xl text-center uppercase '>
+        <div className='my-10'>
+          <p className='text-color-1 text-4xl text-center uppercase font-semibold'>
             Mentors
           </p>
         </div>

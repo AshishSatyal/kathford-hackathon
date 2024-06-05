@@ -1,6 +1,8 @@
 import React from "react";
 import Cross from "../assets/cross.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { variantNav } from "../utils/variants";
 
 const SideNav = ({ setToggle, toggleNav }) => {
   const closeSideBarModal = () => {
@@ -8,7 +10,15 @@ const SideNav = ({ setToggle, toggleNav }) => {
     document.body.classList.remove("overflow-hidden");
   };
   return (
-    <div className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100'>
+    <motion.div
+      initial='offscreen'
+      whileInView={"onscreen"}
+      viewport={{
+        once: true,
+      }}
+      variants={variantNav}
+      className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100'
+    >
       <div className='flex flex-col h-[100%] '>
         <div className='flex h-[60%] '>
           <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start pl-12 lg:pl-16 font-[monument] text-2xl md:text-3xl lg:text-4xl '>
@@ -40,15 +50,19 @@ const SideNav = ({ setToggle, toggleNav }) => {
               </a>
             </li>
             <li className='nav-list'>
-              <Link className='font-semibold text-white' to='/our-team'>
+              <Link
+                className='font-semibold text-white'
+                to='/our-team'
+                onClick={closeSideBarModal}
+              >
                 Our Team
               </Link>
             </li>
-            <li className='nav-list'>
+            {/* <li className='nav-list'>
               <Link className='font-semibold text-white' to='/our-team'>
                 Our Team
               </Link>
-            </li>
+            </li> */}
             <li className='nav-list'>
               <a
                 className='font-semibold'
@@ -102,7 +116,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
