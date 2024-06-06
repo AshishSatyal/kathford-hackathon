@@ -7,7 +7,7 @@ import Faq from "./components/Faq";
 import Prizes from "./components/Prizes";
 import Tracks from "./components/Tracks";
 import Schedule from "./components/Schedule";
-// import Partners from "./components/Partners";
+import Partners from "./components/Partners";
 import Blob from "./components/Blob";
 import Footer from "./components/Footer";
 // import Judges from "./components/Judges";
@@ -29,8 +29,8 @@ const App = () => {
           <Blob />
         </div>
         <div className='body-section relative z-10'>
-          <Header isHidden={isHidden}/>
-          <Hero isVisible={!isHidden}/>
+          <Header isHidden={isHidden} />
+          <Hero isVisible={!isHidden} />
           <Prizes />
           <Tracks />
           <Schedule />
@@ -38,9 +38,13 @@ const App = () => {
           {/* <Judges />
           <Mentors /> */}
           <Faq />
-          {/* <Partners /> */}
+          <Partners />
           <Footer />
-          <div className={`text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer transition-all duration-300 ease-in-out ${!isHidden ? 'opacity-0 invisible' : ''}`}>
+          <div
+            className={`text-white w-[44px] h-[44px] bg-white/20 backdrop-blur-md rounded-md fixed bottom-6 right-6 md:bottom-10 md:right-10 cursor-pointer transition-all duration-300 ease-in-out ${
+              !isHidden ? "opacity-0 invisible" : ""
+            }`}
+          >
             <a
               href='#'
               className='w-full h-full flex items-center justify-center'
