@@ -11,7 +11,6 @@ import { variantNav } from "../utils/variants";
 // import axios from "axios";
 
 const Partners = () => {
-  console.log(partners);
   const cell = partners.map((item) => {
     return (
       <motion.div
