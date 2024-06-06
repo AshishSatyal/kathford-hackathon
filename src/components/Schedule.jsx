@@ -7,15 +7,12 @@ import Timeline from "./Timeline";
 const Schedule = () => {
   return (
     <CenterComponent>
-      <div
-        id='schedule'
-        className='bg-transparent min-h-[90vh][x] py-5 lg:px-10[x] pb-28'
-      >
+      <div id='schedule' className='bg-transparent px-6 py-5 pb-28'>
         <div className='text-center text-xl my-5 '>
           <p className='title text-3xl lg:text-5xl capitalize font-semibold p-10'>
             Schedule
           </p>
-          <p className='text-slate-300 text-2xl mb-10'>
+          <p className='text-slate-300 text-xl md:text-2xl mb-10'>
             Events starts from june28 to june29
           </p>
         </div>

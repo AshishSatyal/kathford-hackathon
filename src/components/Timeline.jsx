@@ -11,7 +11,7 @@ const Timeline = () => {
     border: "1px solid rgba(255,255,255,0.2)",
   };
   return (
-    <div className='my-4'>
+    <div className='my-4 '>
       <VerticalTimeline>
         {timelineElements?.map((element) => {
           return (
@@ -25,7 +25,7 @@ const Timeline = () => {
               iconStyle={{ color: "white", background: "rgba(0,0,0,2)" }}
               dateClassName='date  font-[monument] uppercase text-white/80'
             >
-              <div className=' text-white/80  flex items-center justify-between text-2xl  font-semibold '>
+              <div className=' text-white/80  flex items-center justify-between text-xl md:text-2xl gap-4 font-semibold '>
                 <h3 className='vertical-timeline-element-title  '>
                   {element.title}
                 </h3>
