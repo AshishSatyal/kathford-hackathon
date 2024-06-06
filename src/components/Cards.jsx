@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { variantNav } from "../utils/variants";
 import { motion } from "framer-motion";
 import { EvervaultCard, Icon } from "./EverVaultCard";
+
 const Cards = ({ position, prize, other, img }) => {
   return (
     <motion.div

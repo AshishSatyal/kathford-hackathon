@@ -4,7 +4,6 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "../utils/timeLineElement";
-import CenterComponent from "./CenterComponent";
 
 const Timeline = () => {
   const style = {
@@ -12,7 +11,7 @@ const Timeline = () => {
     border: "1px solid rgba(255,255,255,0.2)",
   };
   return (
-    <div className=''>
+    <div className='my-4'>
       <VerticalTimeline>
         {timelineElements?.map((element) => {
           return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import Cell from "./Cell";
 import CenterComponent from "./CenterComponent";
 import partners from "../utils/partners";

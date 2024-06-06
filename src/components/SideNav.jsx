@@ -17,11 +17,11 @@ const SideNav = ({ setToggle, toggleNav }) => {
         once: true,
       }}
       variants={variantNav}
-      className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100'
+      className='fixed md:m-10 top-0 text-white right-0 w-full md:w-[44%] h-full md:h-[85%] bg-black md:rounded-xl z-30 opacity-100 overflow-y-auto'
     >
-      <div className='flex flex-col h-[100%] '>
+      <div className='flex flex-col h-[100%] pl-12 lg:pl-16 '>
         <div className='flex h-[60%] '>
-          <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start pl-12 lg:pl-16 font-[monument] text-2xl md:text-3xl lg:text-4xl '>
+          <ul className='flex w-4/5 flex-col justify-center uppercase gap-5 items-center[x] text-white text-start font-[monument] text-2xl md:text-3xl lg:text-4xl mt-16'>
             <li className='nav-list'>
               <a
                 className='font-semibold'
@@ -40,7 +40,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
                 Schedule
               </a>
             </li>
-            <li className='nav-list'>
+            {/* <li className='nav-list'>
               <a
                 className='font-semibold'
                 href='#partners'
@@ -48,7 +48,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
               >
                 Partner
               </a>
-            </li>
+            </li> */}
             <li className='nav-list'>
               <Link
                 className='font-semibold text-white'
@@ -85,7 +85,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
           </div>
         </div>
 
-        <div className='flex p-10 pl-12 justify-around items-center'>
+        <div className='flex py-10 justify-around items-center gap-4 mt-8'>
           <div className='w-1/5'>
             <p className='text-sm'>Connect</p>
           </div>
@@ -105,7 +105,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
             </a>
           </div>
         </div>
-        <div className='flex p-10 pl-12'>
+        <div className='flex py-10 gap-4'>
           <div className='w-1/5'>
             <p className='text-sm '>Register On</p>
           </div>

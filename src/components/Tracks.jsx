@@ -8,10 +8,8 @@ import { HiOutlineBookOpen } from "react-icons/hi2";
 import { FaCubes } from "react-icons/fa6";
 import { PiCity } from "react-icons/pi";
 import { IoMdGlobe } from "react-icons/io";
-import { GrCubes } from "react-icons/gr";
 
 import data from '../utils/tracks'; // tracks data...
-import { variantNav } from '../utils/variants';
 
 import { motion } from 'framer-motion';
 

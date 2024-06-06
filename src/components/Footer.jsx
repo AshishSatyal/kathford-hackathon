@@ -1,14 +1,11 @@
 import React from 'react';
 
-import CenterComponent from './CenterComponent';
-
 import kathCode from '/src/assets/kathCode.png';
 
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import {
   FaInstagram,
   FaFacebook,
-  FaXTwitter,
   FaDiscord,
   FaGithub,
 } from 'react-icons/fa6';
@@ -84,11 +81,11 @@ const Footer = () => {
                 Schedule
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="  text-sm " href="#partners">
                 Partner
               </a>
-            </li>
+            </li> */}
             <li>
               <a className="  text-sm " href="#faq">
                 FAQs

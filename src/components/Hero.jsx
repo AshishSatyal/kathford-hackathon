@@ -28,7 +28,7 @@ const Hero = ({ isVisible }) => {
           <CountDown />
         </div>
         <Button
-          className={`inline-flex ${isVisible ? 'lg:opacity-0 invisible' : ''}`}
+          className={`inline-flex h-[60px] w-[200px] ${isVisible ? 'lg:opacity-0 lg:invisible' : ''}`}
           label={"register now"}
           link={"https://forms.gle/NpdpPh6oXmSSmRVf8"}
         />

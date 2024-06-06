@@ -54,6 +54,7 @@
 .body-nav-item > span {
   width: max-content;
 }
+
 .nav-list > a {
   @apply p-2;
 }

@@ -13,10 +13,20 @@ const Header = ({ isHidden }) => {
     setToggle((prevToggle) => !prevToggle);
     document.body.classList.add("overflow-hidden");
   }
+
+  const closeModalClickOnOverlay = (e) => {
+    const targetEl = e.target;
+
+    if (targetEl.classList.contains('overlay')) {
+      toggleNav();
+      document.body.classList.remove("overflow-hidden");
+    }
+  }
+
   return (
     // --Header-container--
     <>
-      <div className='sticky top-0 px-4 py-4 h-20 min-w-full text-white z-10 '>
+      <div className='sticky top-0 px-4 py-4 h-20 min-w-full text-white z-10'>
         <div className='flex justify-between items-center xl:px-10'>
           <div>
             <Link to='/' className='block w-[12rem] xl:mr-8 '>
@@ -50,7 +60,10 @@ const Header = ({ isHidden }) => {
           </div>
         </div>
       </div>
-      <div className={`overlay ${toggle ? "active" : ""} `}>
+      <div 
+        className={`overlay ${toggle ? "active" : ""} `}
+        onClick={(event) => closeModalClickOnOverlay(event)}  
+      >
         {toggle ? <SideNav setToggle={setToggle} /> : ""}
       </div>
     </>
