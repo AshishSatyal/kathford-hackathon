@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,28 +14,34 @@
 }
 
 @font-face {
-  font-family: 'Archiv';
-  src: url('./assets/fonts/ArchivGroteskTrial-RegularTrial.otf')
-    format('opentype');
+  font-family: "Archiv";
+  src: url("./assets/fonts/ArchivGroteskTrial-RegularTrial.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'whites';
-  src: url('./assets/fonts/WhyteInktrap-Regular.ttf') format('opentype');
+  font-family: "whites";
+  src: url("./assets/fonts/WhyteInktrap-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'monument';
-  src: url('./assets/fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-family: "monument";
+  src: url("./assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "monument-thin";
+  src: url("./assets/fonts/monument-thin.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: 'ArchivGrotesk', sans-serif;
+  font-family: "ArchivGrotesk", sans-serif;
   user-select: none;
 }
 
@@ -50,16 +56,21 @@ body {
 }
 
 .hero-text {
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: white;
+  /* -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: white; */
   letter-spacing: 6px;
-  font-family: 'monument';
+  font-family: "monument";
+}
+@media (max-width: 375px) {
+  .hero-text {
+    font-family: "monument-thin";
+  }
 }
 .text-top {
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white; */
   letter-spacing: 2px;
-  font-family: 'Archiv';
+  font-family: "Archiv";
   font-size: 24px;
   font-weight: 700;
 }

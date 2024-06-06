@@ -40,7 +40,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
                 Schedule
               </a>
             </li>
-            {/* <li className='nav-list'>
+            <li className='nav-list'>
               <a
                 className='font-semibold'
                 href='#partners'
@@ -48,7 +48,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
               >
                 Partner
               </a>
-            </li> */}
+            </li>
             <li className='nav-list'>
               <Link
                 className='font-semibold text-white'

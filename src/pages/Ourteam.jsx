@@ -14,12 +14,12 @@ const Ourteam = () => {
           once: true,
         }}
         variants={variantNav}
-        className='w-fit sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border  border-black/[0.2] dark:border-white/[0.2] '
+        className=' sm:min-w-[300px]  w-[80%] sm:w-[22%] m-5 min-h-80 flex flex-col rounded-xl border border-black/[0.2] dark:border-white/[0.2] '
         key={item.id}
       >
-        <div className='team-img h-72'>
+        <div className=' w-[100%] h-72'>
           <img
-            className='rounded-xl w-full h-full object-cover'
+            className='rounded-xl w-[100%] border h-full object-cover object-center'
             src={item.image}
           />
         </div>
