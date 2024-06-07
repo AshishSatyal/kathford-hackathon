@@ -25,7 +25,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <li className='nav-list'>
               <a
                 className='font-semibold'
-                href='#prizes'
+                href='/#prizes'
                 onClick={closeSideBarModal}
               >
                 Prizes
@@ -34,7 +34,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <li className='nav-list'>
               <a
                 className=' font-semibold '
-                href='#schedule'
+                href='/#schedule'
                 onClick={closeSideBarModal}
               >
                 Schedule
@@ -43,7 +43,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <li className='nav-list'>
               <a
                 className='font-semibold'
-                href='#partners'
+                href='/#partners'
                 onClick={closeSideBarModal}
               >
                 Partner
@@ -66,7 +66,7 @@ const SideNav = ({ setToggle, toggleNav }) => {
             <li className='nav-list'>
               <a
                 className='font-semibold'
-                href='#faq'
+                href='/#faq'
                 onClick={closeSideBarModal}
               >
                 FAQs

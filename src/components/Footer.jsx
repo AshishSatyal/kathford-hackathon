@@ -78,11 +78,11 @@ const Footer = () => {
                 Schedule
               </a>
             </li>
-            {/* <li>
+            <li>
               <a className="  text-sm " href="#partners">
                 Partner
               </a>
-            </li> */}
+            </li>
             <li>
               <a className='  text-sm ' href='#faq'>
                 FAQs
